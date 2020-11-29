@@ -1,0 +1,41 @@
+.checkbox {
+    margin-bottom: 47px;
+}
+
+.checkbox__input {
+    display: flex;
+    cursor: pointer;
+}
+
+.checkbox__visible {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    background-color: #FFF;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &::before {
+        content: "";
+        background: url('./img/delivery-pic/checkmark.svg') center center no-repeat;
+        width: 13px;
+        height: 13px;
+        display: none;
+    }
+}
+
+.checkbox__elem {
+    display: none;
+
+    &:checked~.checkbox__visible {
+        &::before {
+            display: block;
+        }
+    }
+}

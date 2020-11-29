@@ -1,0 +1,18 @@
+.advantages__list {
+    display: flex;
+}
+
+.advantages__item {
+    display: flex;
+    margin-right: 35px;
+}
+
+.advantages__icon {
+    width: 41px;
+    margin-right: 13px;
+}
+
+.advantages__item-desc {
+    font-size: 16px;
+    max-width: 85px;
+}

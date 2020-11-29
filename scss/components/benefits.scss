@@ -1,0 +1,54 @@
+.benefits {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits__item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 0 2%;
+
+    &::before {
+        content: url('./img/why-pic/shape.png');
+        position: absolute;
+        top: 60px;
+        right: 0;
+        transform: translateX(50%);
+
+
+    }
+
+    &:last-child {
+
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.benefits__image {
+    width: 128px;
+    height: 128px;
+    background: #F2F5F4;
+    border-radius: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.benefits__icon {
+    width: 64px;
+    height: auto;
+}
+
+.benefits__title {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #000;
+}

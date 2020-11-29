@@ -1,0 +1,44 @@
+.hero-section {
+    background: url('./img/bg/hero/big-list.png') right bottom no-repeat;
+    background-color: $blue;
+    color: #fff;
+
+    &::before {
+        content: url('./img/bg/hero/list3.png');
+        position: absolute;
+        left: 1.8%;
+        bottom: -38px;
+    }
+
+    &::after {
+        content: url('./img/bg/hero/berries.png');
+        position: absolute;
+        right: 0;
+        bottom: -38px;
+    }
+}
+
+.hero-container {
+    padding: 24px 0 50px;
+    background: url('./img/bg/hero/chocolate.png') right center / 50% auto no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero__title-section {
+    max-width: 42%;
+}
+
+.hero__main-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+.hero__subtitle {
+    font-size: 21px;
+    padding-right: 10%;
+    margin-bottom: 51px;
+}
