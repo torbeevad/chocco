@@ -5,6 +5,10 @@
 .advantages__item {
     display: flex;
     margin-right: 35px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .advantages__icon {
