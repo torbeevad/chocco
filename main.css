@@ -829,6 +829,9 @@ img {
   display: flex;
   margin-bottom: 15px;
 }
+.form__row:last-child {
+  margin-bottom: 0;
+}
 
 .form__block {
   flex: 1;
@@ -866,14 +869,27 @@ img {
   border: 3px solid #DEE2BD;
 }
 
+.form__control {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.form__button {
+  margin-top: 15px;
+}
+
 .radio {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.radio:last-child {
+  margin-bottom: 0;
 }
 
 .radio__box {
   display: inline-flex;
-  margin: 0 30px 20px 0;
+  margin-right: 23px;
   cursor: pointer;
 }
 .radio__box:last-child {
@@ -916,8 +932,7 @@ img {
 }
 
 .checkbox {
-  display: inline-flex;
-  margin-bottom: 47px;
+  display: flex;
 }
 
 .checkbox__input {
