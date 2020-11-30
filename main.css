@@ -827,15 +827,15 @@ img {
 
 .form__row {
   display: flex;
+  margin-bottom: 15px;
+}
+.form__row:last-child {
+  margin-right: 0;
 }
 
 .form__block {
   flex: 1;
   margin-right: 20px;
-  margin-bottom: 15px;
-}
-.form__block:last-child {
-  margin-right: 0;
 }
 
 .form__entry {
