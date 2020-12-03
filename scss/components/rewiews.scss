@@ -15,6 +15,10 @@
         left: 0;
         bottom: rem(-160px);
     }
+
+    @include phones {
+        background-size: 20%;
+    }
 }
 
 .rewiews-section__title {
