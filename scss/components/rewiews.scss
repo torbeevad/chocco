@@ -47,6 +47,13 @@
     margin-bottom: rem(15px);
     background: url('./img/bg/rewiews/bw-berries.png') right 15% no-repeat;
     background-color: #F8FAF9;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
 }
 
 .reviews__avatar {
@@ -54,20 +61,38 @@
     margin-right: rem(40px);
     width: rem(252px);
     height: rem(264px);
+    flex-shrink: 0;
+
+    @include tablets {
+        width: rem(140px);
+        height: rem(140px);
+        margin-bottom: rem(30px);
+    }
 }
 
 .reviews__content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    max-width: 50%;
-    padding: rem(18px) 0;
 }
 
 .reviews__content-title {
     font-weight: bold;
     font-size: rem(27px);
     color: #000;
+    @include tablets {
+        margin-bottom: rem(25px);
+    }
+}
+
+.reviews__content-text {
+    max-width: 78%;
+    @include tablets {
+        max-width: 100%;
+        @include tablets {
+            margin-bottom: rem(25px);
+        }
+    }
 }
 
 .content-autor {

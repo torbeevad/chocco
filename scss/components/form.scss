@@ -18,16 +18,28 @@
 
 .delivery-container {
     color: $darkgreen;
+    align-items: center;
+
+    @include tablets {
+        max-width: 62%;
+    }
 }
 
 .delivery-title {
     color: $darkgreen;
     margin-bottom: rem(60px);
+    @include tablets {
+        margin-bottom: rem(40px);
+    }
 }
 
 .form {
     display: flex;
     justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .form__column {
@@ -35,6 +47,11 @@
     flex-direction: column;
     flex: 1;
     margin-right: rem(27px);
+
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: rem(24px);
+    }
 
     &:last-child {
         margin-right: 0;
@@ -47,6 +64,10 @@
 
     &:last-child {
         margin-bottom: 0;
+    }
+    @include tablets {
+        margin-bottom: rem(20px);
+
     }
 }
 
@@ -66,6 +87,10 @@
     border-radius: rem(4px);
     border: rem(3px) solid transparent;
     font-size: rem(20px);
+
+    @include tablets {
+        height: rem(36px);
+    }
 
     &-number {
         text-align: center;
@@ -97,5 +122,9 @@
 }
 
 .form__button {
+    display: flex;
     margin-top: rem(15px);
+    @include tablets {
+        justify-content: center;
+    }
 }

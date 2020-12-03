@@ -1,6 +1,10 @@
 .why-section {
     background: url('./img/bg/why/leaf.png') left center no-repeat;
 
+    @include tablets {
+        background-position: left 10%;
+    }
+
     &::before {
         content: url('./img/bg/why/malina.png');
         position: absolute;
@@ -19,13 +23,22 @@
     max-width: 50%;
     justify-content: center;
     margin-bottom: rem(50px);
+
+    @include tablets {
+        max-width: 100%;
+    }
 }
 
-.headline__title {
+.why-section__title {
     margin-bottom: rem(19px);
+
 }
 
-.headline__subtitle {
+.why-section__subtitle {
     text-align: center;
     padding: 0 5%;
+
+    @include tablets {
+        padding: 0 20%;
+    }
 }

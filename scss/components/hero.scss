@@ -39,7 +39,7 @@
 
     @include tablets {
         background: url('./img/bg/hero/comp.png') center 30% / 50% auto no-repeat;
-
+        padding: rem(24px) 0 rem(110px);
     }
 }
 
@@ -50,6 +50,7 @@
         max-width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         text-align: center;
     }
@@ -60,10 +61,18 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: rem(17px);
+    @include tablets {
+        margin-bottom: rem(12px);
+    }
 }
 
 .hero__subtitle {
     font-size: rem(21px);
     padding-right: 10%;
     margin-bottom: rem(51px);
+
+    @include tablets {
+        padding: 0 27%;
+        margin-bottom: rem(23px);
+    }
 }
