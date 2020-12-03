@@ -16,9 +16,8 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    min-height: $containerWidth + 20px;
+    min-height: 100%;
     overflow: hidden;
-    min-width: $containerWidth + 20px;
 }
 
 .section {
@@ -32,7 +31,8 @@ body {
 }
 
 .container {
-    width: $containerWidth;
+    width: 95%;
+    max-width: $containerWidth;
     margin: 0 auto;
     display: flex;
     flex-direction: column;

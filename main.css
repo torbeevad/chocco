@@ -386,9 +386,8 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 960px;
+  min-height: 100%;
   overflow: hidden;
-  min-width: 960px;
 }
 
 .section {
@@ -402,7 +401,8 @@ body {
 }
 
 .container {
-  width: 940px;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -548,7 +548,7 @@ img {
 }
 
 .btn {
-  padding: 21px 41px;
+  padding: 1.1666666667rem 2.2777777778rem;
   font-weight: 800;
   text-transform: uppercase;
   border-radius: 50px;
