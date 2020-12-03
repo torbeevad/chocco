@@ -10,6 +10,9 @@
 
 .menu {
     flex: 1;
+    @include tablets {
+        display: none;
+    }
 }
 
 .menu__list {
@@ -23,6 +26,9 @@
     align-items: center;
     margin-right: 1%;
     margin-left: 4.5%;
+    @include tablets {
+        display: none;
+    }
 }
 
 .phone__number {

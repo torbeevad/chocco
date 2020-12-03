@@ -371,6 +371,16 @@ template {
 html {
   font-size: 18px;
 }
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
 
 html,
 body {
@@ -472,17 +482,32 @@ img {
   background-color: #61C4D9;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .hero-section {
+    background-position: right 30%;
+  }
+}
 .hero-section::before {
   content: url("./img/bg/hero/list3.png");
   position: absolute;
   left: 1.8%;
   bottom: -2.1111111111rem;
 }
+@media screen and (max-width: 768px) {
+  .hero-section::before {
+    display: none;
+  }
+}
 .hero-section::after {
   content: url("./img/bg/hero/berries.png");
   position: absolute;
   right: 0;
   bottom: -2.1111111111rem;
+}
+@media screen and (max-width: 768px) {
+  .hero-section::after {
+    display: none;
+  }
 }
 
 .hero-container {
@@ -492,9 +517,23 @@ img {
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .hero-container {
+    background: url("./img/bg/hero/comp.png") center 30%/50% auto no-repeat;
+  }
+}
 
 .hero__title-section {
   max-width: 42%;
+}
+@media screen and (max-width: 768px) {
+  .hero__title-section {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .hero__main-title {
@@ -523,6 +562,11 @@ img {
 .menu {
   flex: 1;
 }
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
 
 .menu__list {
   display: flex;
@@ -535,6 +579,11 @@ img {
   align-items: center;
   margin-right: 1%;
   margin-left: 4.5%;
+}
+@media screen and (max-width: 768px) {
+  .phone {
+    display: none;
+  }
 }
 
 .phone__number {
@@ -587,6 +636,11 @@ img {
 
 .advantages__list {
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .advantages__list {
+    display: none;
+  }
 }
 
 .advantages__item {

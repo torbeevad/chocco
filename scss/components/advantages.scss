@@ -1,5 +1,8 @@
 .advantages__list {
     display: flex;
+    @include tablets {
+        display: none;
+    }
 }
 
 .advantages__item {
