@@ -7,19 +7,19 @@
         content: url('./img/bg/hero/list3.png');
         position: absolute;
         left: 1.8%;
-        bottom: -38px;
+        bottom: rem(-38px);
     }
 
     &::after {
         content: url('./img/bg/hero/berries.png');
         position: absolute;
         right: 0;
-        bottom: -38px;
+        bottom: rem(-38px);
     }
 }
 
 .hero-container {
-    padding: 24px 0 50px;
+    padding: rem(24px) 0 rem(50px);
     background: url('./img/bg/hero/chocolate.png') right center / 50% auto no-repeat;
     display: flex;
     flex-direction: column;
@@ -31,14 +31,14 @@
 }
 
 .hero__main-title {
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 17px;
+    margin-bottom: rem(17px);
 }
 
 .hero__subtitle {
-    font-size: 21px;
+    font-size: rem(21px);
     padding-right: 10%;
-    margin-bottom: 51px;
+    margin-bottom: rem(51px);
 }

@@ -8,14 +8,14 @@
 }
 
 .checkbox__visible {
-    width: 25px;
-    height: 25px;
+    width: rem(25px);
+    height: rem(25px);
     display: flex;
     background-color: #FFF;
-    margin-right: 10px;
+    margin-right: rem(10px);
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: rem(4px);
 
     &:last-child {
         margin-right: 0;
@@ -24,8 +24,8 @@
     &::before {
         content: "";
         background: url('./img/delivery-pic/checkmark.svg') center center no-repeat;
-        width: 13px;
-        height: 13px;
+        width: rem(13px);
+        height: rem(13px);
         display: none;
     }
 }

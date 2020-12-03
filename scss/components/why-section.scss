@@ -5,7 +5,7 @@
         content: url('./img/bg/why/malina.png');
         position: absolute;
         left: 0;
-        bottom: -110px;
+        bottom: rem(-110px);
     }
 }
 
@@ -18,11 +18,11 @@
     flex-direction: column;
     max-width: 50%;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
 }
 
 .headline__title {
-    margin-bottom: 19px;
+    margin-bottom: rem(19px);
 }
 
 .headline__subtitle {

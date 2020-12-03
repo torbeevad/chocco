@@ -27,13 +27,13 @@
 
 .phone__number {
     font-style: normal;
-    font-size: 22px;
+    font-size: rem(22px);
 }
 
 .phone__icon {
     display: block;
-    width: 14px;
-    height: 14px;
-    margin-right: 6px;
+    width: rem(14px);
+    height: rem(14px);
+    margin-right: rem(6px);
     fill: #FFF;
 }

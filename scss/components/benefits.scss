@@ -15,7 +15,7 @@
     &::before {
         content: url('./img/why-pic/shape.png');
         position: absolute;
-        top: 60px;
+        top: rem(60px);
         right: 0;
         transform: translateX(50%);
 
@@ -31,24 +31,24 @@
 }
 
 .benefits__image {
-    width: 128px;
-    height: 128px;
+    width: rem(128px);
+    height: rem(128px);
     background: #F2F5F4;
-    border-radius: 128px;
+    border-radius: rem(128px);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 
 .benefits__icon {
-    width: 64px;
+    width: rem(64px);
     height: auto;
 }
 
 .benefits__title {
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: bold;
-    margin-bottom: 18px;
+    margin-bottom: rem(18px);
     color: #000;
 }

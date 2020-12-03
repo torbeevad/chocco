@@ -5,7 +5,7 @@
 }
 
 .fixed-menu__item {
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
 
     &:last-child {
         margin-bottom: 0;
@@ -16,24 +16,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 18px;
-    height: 18px;
+    width: rem(18px);
+    height: rem(18px);
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: rem(1px) solid transparent;
 
     &::before {
         content: "";
         display: block;
         position: absolute;
-        width: 6px;
-        height: 6px;
+        width: rem(6px);
+        height: rem(6px);
         border-radius: 50%;
         background-color: #FFF;
     }
 }
 
 .fixed-menu__link--active {
-    width: 18px;
-    height: 18px;
-    border: 1px solid #FFF;
+    width: rem(18px);
+    height: rem(18px);
+    border: rem(1px) solid #FFF;
 }

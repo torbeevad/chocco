@@ -4,7 +4,7 @@
 
 .advantages__item {
     display: flex;
-    margin-right: 35px;
+    margin-right: rem(35px);
 
     &:last-child {
         margin-right: 0;
@@ -12,11 +12,11 @@
 }
 
 .advantages__icon {
-    width: 41px;
-    margin-right: 13px;
+    width: rem(41px);
+    margin-right: rem(13px);
 }
 
 .advantages__item-desc {
-    font-size: 16px;
-    max-width: 85px;
+    font-size: rem(16px);
+    max-width: rem(85px);
 }

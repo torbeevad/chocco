@@ -2,7 +2,7 @@
     padding: rem(21px) rem(41px);
     font-weight: 800;
     text-transform: uppercase;
-    border-radius: 50px;
+    border-radius: rem(50px);
     border: none;
     outline: none;
 
@@ -30,7 +30,7 @@
     &.btn-theme-transparent {
         background-color: transparent;
         padding: 0;
-        margin-left: 20px;
+        margin-left: rem(20px);
         color: $darkgreen;
         font-weight: normal;
         text-transform: none;

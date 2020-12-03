@@ -1,7 +1,7 @@
 .radio {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 
     &:last-child {
 
@@ -11,7 +11,7 @@
 
 .radio__box {
     display: inline-flex;
-    margin-right: 23px;
+    margin-right: rem(23px);
     cursor: pointer;
 
     &:last-child {
@@ -25,12 +25,12 @@
 }
 
 .radio__visible {
-    width: 25px;
-    height: 25px;
+    width: rem(25px);
+    height: rem(25px);
     display: flex;
     border-radius: 50%;
     background-color: #FFF;
-    margin-right: 10px;
+    margin-right: rem(10px);
     align-items: center;
     justify-content: center;
 
@@ -40,8 +40,8 @@
 
     &::before {
         content: "";
-        width: 13px;
-        height: 13px;
+        width: rem(13px);
+        height: rem(13px);
         border-radius: 50%;
         background-color: $darkgreen;
         display: none;
