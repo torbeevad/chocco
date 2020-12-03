@@ -7,6 +7,10 @@
 
         margin-bottom: 0;
     }
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .radio__box {

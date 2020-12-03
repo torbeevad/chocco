@@ -1,5 +1,9 @@
 .checkbox {
     display: flex;
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .checkbox__input {

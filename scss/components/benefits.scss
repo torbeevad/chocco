@@ -1,6 +1,10 @@
 .benefits {
     display: flex;
     justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .benefits__item {
@@ -19,7 +23,9 @@
         right: 0;
         transform: translateX(50%);
 
-
+        @include phones {
+            display: none;
+        }
     }
 
     &:last-child {
@@ -27,6 +33,13 @@
         &:before {
             display: none;
         }
+
+    }
+
+    @include phones {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
     }
 }
 
@@ -39,6 +52,11 @@
     justify-content: center;
     align-items: center;
     margin-bottom: rem(20px);
+    flex-shrink: 0;
+
+    @include phones {
+        margin-right: rem(20px);
+    }
 }
 
 .benefits__icon {

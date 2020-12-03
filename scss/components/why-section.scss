@@ -5,6 +5,10 @@
         background-position: left 10%;
     }
 
+    @include phones {
+        background: none;
+    }
+
     &::before {
         content: url('./img/bg/why/malina.png');
         position: absolute;
@@ -40,5 +44,9 @@
 
     @include tablets {
         padding: 0 20%;
+    }
+
+    @include phones {
+        padding: 0 5%;
     }
 }

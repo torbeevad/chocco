@@ -7,6 +7,11 @@
         background-position: right 30%;
     }
 
+    @include phones {
+        background-position: right 10%;
+        background-size: 70%;
+    }
+
     &::before {
         content: url('./img/bg/hero/list3.png');
         position: absolute;
@@ -41,6 +46,11 @@
         background: url('./img/bg/hero/comp.png') center 30% / 50% auto no-repeat;
         padding: rem(24px) 0 rem(110px);
     }
+
+    @include phones {
+        background: url('./img/bg/hero/comp.png') center 15% / 80% auto no-repeat;
+        padding: rem(24px) 0 rem(110px);
+    }
 }
 
 .hero__title-section {
@@ -61,6 +71,7 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: rem(17px);
+
     @include tablets {
         margin-bottom: rem(12px);
     }

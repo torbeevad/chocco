@@ -487,6 +487,12 @@ img {
     background-position: right 30%;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero-section {
+    background-position: right 10%;
+    background-size: 70%;
+  }
+}
 .hero-section::before {
   content: url("./img/bg/hero/list3.png");
   position: absolute;
@@ -520,6 +526,12 @@ img {
 @media screen and (max-width: 768px) {
   .hero-container {
     background: url("./img/bg/hero/comp.png") center 30%/50% auto no-repeat;
+    padding: 1.3333333333rem 0 6.1111111111rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-container {
+    background: url("./img/bg/hero/comp.png") center 15%/80% auto no-repeat;
     padding: 1.3333333333rem 0 6.1111111111rem;
   }
 }
@@ -683,6 +695,11 @@ img {
     background-position: left 10%;
   }
 }
+@media screen and (max-width: 480px) {
+  .why-section {
+    background: none;
+  }
+}
 .why-section::before {
   content: url("./img/bg/why/malina.png");
   position: absolute;
@@ -720,10 +737,20 @@ img {
     padding: 0 20%;
   }
 }
+@media screen and (max-width: 480px) {
+  .why-section__subtitle {
+    padding: 0 5%;
+  }
+}
 
 .benefits {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 480px) {
+  .benefits {
+    flex-direction: column;
+  }
 }
 
 .benefits__item {
@@ -742,8 +769,20 @@ img {
   right: 0;
   transform: translateX(50%);
 }
+@media screen and (max-width: 480px) {
+  .benefits__item::before {
+    display: none;
+  }
+}
 .benefits__item:last-child:before {
   display: none;
+}
+@media screen and (max-width: 480px) {
+  .benefits__item {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
 }
 
 .benefits__image {
@@ -755,6 +794,12 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 1.1111111111rem;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 480px) {
+  .benefits__image {
+    margin-right: 1.1111111111rem;
+  }
 }
 
 .benefits__icon {
@@ -913,11 +958,21 @@ img {
   right: 1%;
   bottom: 7%;
 }
+@media screen and (max-width: 480px) {
+  .delivery-section::after {
+    display: none;
+  }
+}
 .delivery-section::before {
   content: url("./img/bg/delivery/berry.png");
   position: absolute;
   left: 3%;
   bottom: 7%;
+}
+@media screen and (max-width: 480px) {
+  .delivery-section::before {
+    display: none;
+  }
 }
 
 .delivery-container {
@@ -927,6 +982,11 @@ img {
 @media screen and (max-width: 768px) {
   .delivery-container {
     max-width: 62%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .delivery-container {
+    max-width: 100%;
   }
 }
 
@@ -1043,6 +1103,11 @@ img {
 .radio:last-child {
   margin-bottom: 0;
 }
+@media screen and (max-width: 480px) {
+  .radio {
+    justify-content: center;
+  }
+}
 
 .radio__box {
   display: inline-flex;
@@ -1090,6 +1155,11 @@ img {
 
 .checkbox {
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .checkbox {
+    justify-content: center;
+  }
 }
 
 .checkbox__input {
