@@ -68,6 +68,11 @@
         justify-content: space-between;
         background-size: 30%;
     }
+
+    @include phones {
+        background-size: 20%;
+        padding: 5%;
+    }
 }
 
 .reviews__avatar {

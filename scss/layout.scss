@@ -6,7 +6,7 @@ html {
     }
 
     @include phones {
-        font-size: $baseFontSize - 3px;
+        font-size: $baseFontSize - 4px;
     }
 }
 
@@ -34,6 +34,7 @@ body {
 .section {
     position: relative;
     height: 100vh;
+    min-height: rem(650px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,6 +49,10 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+
+    @include phones {
+        padding: 5% 0 15%;
+    }
 }
 
 .section__title {
@@ -58,7 +63,7 @@ body {
     text-align: center;
 
     @include phones {
-        font-size: rem(35px);
+        font-size: rem(40px);
     }
 }
 

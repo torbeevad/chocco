@@ -2,6 +2,14 @@
     position: fixed;
     top: 36%;
     right: 2%;
+
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
 }
 
 .fixed-menu__item {
