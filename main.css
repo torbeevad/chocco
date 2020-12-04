@@ -431,7 +431,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .section__title {
-    font-size: 1.9444444444rem;
+    font-size: 2.2222222222rem;
   }
 }
 
@@ -536,7 +536,7 @@ img {
 @media screen and (max-width: 480px) {
   .hero-container {
     background: url("./img/bg/hero/comp.png") center 15%/80% auto no-repeat;
-    padding: 1.3333333333rem 0 1.3333333333rem;
+    padding: 1.3333333333rem 0 6.1111111111rem;
   }
 }
 
@@ -553,6 +553,11 @@ img {
     text-align: center;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero__title-section {
+    padding: 0 5%;
+  }
+}
 
 .hero__main-title {
   font-size: 2.6666666667rem;
@@ -567,7 +572,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .hero__main-title {
-    font-size: 1.9444444444rem;
+    font-size: 2.2222222222rem;
   }
 }
 
@@ -578,7 +583,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .hero__subtitle {
-    padding: 0 15%;
+    padding: 0 10%;
     margin-bottom: 1.2777777778rem;
   }
 }
