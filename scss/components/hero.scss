@@ -48,7 +48,7 @@
     }
 
     @include phones {
-        background: url('./img/bg/hero/comp.png') center 15% / 80% auto no-repeat;
+        background: url('./img/bg/hero/comp.png') center 15% / 75% auto no-repeat;
         padding: rem(24px) 0 20%;
     }
 }
@@ -63,10 +63,6 @@
         justify-content: space-between;
         align-items: center;
         text-align: center;
-    }
-
-    @include phones {
-        padding: 0 5%;
     }
 }
 
@@ -93,5 +89,9 @@
     @include tablets {
         padding: 0 10%;
         margin-bottom: rem(23px);
+    }
+
+    @include phones {
+        padding: 0;
     }
 }
