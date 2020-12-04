@@ -48,8 +48,8 @@
     }
 
     @include phones {
-        background: url('./img/bg/hero/comp.png') center 15% / 75% auto no-repeat;
-        padding: rem(24px) 0 20%;
+        background: url('./img/bg/hero/comp.png') center 12% / 75% auto no-repeat;
+        padding: 5% 0 15%;
     }
 }
 
@@ -77,7 +77,8 @@
     }
 
     @include phones {
-        font-size: rem(40px);
+        max-width: 60%;
+        font-size: rem(35px);
     }
 }
 
@@ -92,6 +93,7 @@
     }
 
     @include phones {
+        max-width: 70%;
         padding: 0;
     }
 }

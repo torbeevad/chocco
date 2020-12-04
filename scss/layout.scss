@@ -6,7 +6,7 @@ html {
     }
 
     @include phones {
-        font-size: $baseFontSize - 2px;
+        font-size: $baseFontSize - 3px;
     }
 }
 
@@ -58,7 +58,7 @@ body {
     text-align: center;
 
     @include phones {
-        font-size: rem(40px);
+        font-size: rem(35px);
     }
 }
 
