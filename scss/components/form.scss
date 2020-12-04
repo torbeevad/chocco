@@ -33,7 +33,6 @@
     }
 
     @include phones {
-        justify-content: space-evenly;
         max-width: 100%;
     }
 }
@@ -47,7 +46,7 @@
     }
 
     @include phones {
-        margin-bottom: 0;
+        margin-bottom: 5%;
         font-size: rem(35px);
     }
 }
@@ -67,13 +66,17 @@
     flex: 1;
     margin-right: rem(27px);
 
+    &:last-child {
+        margin-right: 0;
+
+        @include phones {
+            margin-bottom: 0;
+        }
+    }
+
     @include tablets {
         margin-right: 0;
         margin-bottom: rem(24px);
-    }
-
-    &:last-child {
-        margin-right: 0;
     }
 }
 
@@ -117,7 +120,7 @@
     }
 
     &--textarea {
-        height: rem(152px);
+        max-height: rem(152px);
         resize: none;
         width: 100%;
         padding: rem(15px);
@@ -130,7 +133,7 @@
         }
 
         @include phones {
-            max-height: rem(76px);
+            min-height: rem(76px);
         }
     }
 
