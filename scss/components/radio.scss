@@ -18,8 +18,17 @@
     margin-right: rem(23px);
     cursor: pointer;
 
+    @include tablets {
+        margin-bottom: rem(14px);
+    }
+
     &:last-child {
         margin-right: 0;
+        margin-bottom: 0;
+
+        @include tablets {
+            margin-bottom: 0;
+        }
     }
 }
 

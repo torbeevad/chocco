@@ -24,21 +24,20 @@
     &:last-child {
         margin-right: 0;
     }
+}
 
-    &::before {
-        content: "";
-        background: url('./img/delivery-pic/checkmark.svg') center center no-repeat;
-        width: rem(13px);
-        height: rem(13px);
-        display: none;
-    }
+.checkbox__checkmark {
+    width: rem(13px);
+    height: rem(13px);
+    display: none;
+    fill: $darkgreen;
 }
 
 .checkbox__elem {
     display: none;
 
-    &:checked~.checkbox__visible {
-        &::before {
+    &:checked+.checkbox__visible {
+        .checkbox__checkmark {
             display: block;
         }
     }
