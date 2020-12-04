@@ -49,7 +49,7 @@
 
     @include phones {
         background: url('./img/bg/hero/comp.png') center 15% / 80% auto no-repeat;
-        padding: rem(24px) 0 rem(110px);
+        padding: rem(24px) 0 rem(24px);
     }
 }
 
@@ -75,6 +75,10 @@
     @include tablets {
         margin-bottom: rem(12px);
     }
+
+    @include phones {
+        font-size: rem(35px);
+    }
 }
 
 .hero__subtitle {
@@ -83,7 +87,7 @@
     margin-bottom: rem(51px);
 
     @include tablets {
-        padding: 0 27%;
+        padding: 0 15%;
         margin-bottom: rem(23px);
     }
 }

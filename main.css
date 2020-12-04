@@ -373,12 +373,12 @@ html {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -406,7 +406,6 @@ body {
 .section {
   position: relative;
   height: 100vh;
-  min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -429,6 +428,11 @@ body {
   color: #000;
   text-transform: uppercase;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 1.9444444444rem;
+  }
 }
 
 h1,
@@ -532,7 +536,7 @@ img {
 @media screen and (max-width: 480px) {
   .hero-container {
     background: url("./img/bg/hero/comp.png") center 15%/80% auto no-repeat;
-    padding: 1.3333333333rem 0 6.1111111111rem;
+    padding: 1.3333333333rem 0 1.3333333333rem;
   }
 }
 
@@ -561,6 +565,11 @@ img {
     margin-bottom: 0.6666666667rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero__main-title {
+    font-size: 1.9444444444rem;
+  }
+}
 
 .hero__subtitle {
   font-size: 1.1666666667rem;
@@ -569,7 +578,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .hero__subtitle {
-    padding: 0 27%;
+    padding: 0 15%;
     margin-bottom: 1.2777777778rem;
   }
 }
@@ -827,13 +836,24 @@ img {
   position: absolute;
   left: 0;
   bottom: -5rem;
-  z-index: 10;
+  z-index: 20;
+}
+@media screen and (max-width: 480px) {
+  .reviews-section::before {
+    display: none;
+  }
 }
 .reviews-section::after {
   content: url("./img/bg/rewiews/bw-leaf.png");
   position: absolute;
   left: 0;
   bottom: -8.8888888889rem;
+  z-index: 10;
+}
+@media screen and (max-width: 480px) {
+  .reviews-section::after {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
   .reviews-section {
@@ -877,6 +897,7 @@ img {
     align-items: center;
     text-align: center;
     justify-content: space-between;
+    background-size: 30%;
   }
 }
 
@@ -959,54 +980,61 @@ img {
   object-fit: cover;
 }
 
-.delivery-section {
+.form-section {
   background: url("./img/bg/delivery/backgr.png");
 }
-.delivery-section::after {
+.form-section::after {
   content: url("./img/bg/delivery/leaf.png");
   position: absolute;
   right: 1%;
   bottom: 7%;
 }
 @media screen and (max-width: 480px) {
-  .delivery-section::after {
+  .form-section::after {
     display: none;
   }
 }
-.delivery-section::before {
+.form-section::before {
   content: url("./img/bg/delivery/berry.png");
   position: absolute;
   left: 3%;
   bottom: 7%;
 }
 @media screen and (max-width: 480px) {
-  .delivery-section::before {
+  .form-section::before {
     display: none;
   }
 }
 
-.delivery-container {
+.form-container {
   color: #365A49;
   align-items: center;
 }
 @media screen and (max-width: 768px) {
-  .delivery-container {
+  .form-container {
     max-width: 62%;
   }
 }
 @media screen and (max-width: 480px) {
-  .delivery-container {
+  .form-container {
+    justify-content: space-evenly;
     max-width: 100%;
   }
 }
 
-.delivery-title {
+.form-title {
   color: #365A49;
   margin-bottom: 3.3333333333rem;
 }
 @media screen and (max-width: 768px) {
-  .delivery-title {
+  .form-title {
     margin-bottom: 2.2222222222rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form-title {
+    margin-bottom: 0;
+    font-size: 1.9444444444rem;
   }
 }
 
@@ -1084,6 +1112,11 @@ img {
 .form__entry--textarea:focus {
   outline: none;
   border: 0.1666666667rem solid #DEE2BD;
+}
+@media screen and (max-width: 480px) {
+  .form__entry--textarea {
+    max-height: 8.4444444444rem;
+  }
 }
 .form__entry:focus {
   outline: none;

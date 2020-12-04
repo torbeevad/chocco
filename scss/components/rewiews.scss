@@ -6,7 +6,11 @@
         position: absolute;
         left: 0;
         bottom: rem(-90px);
-        z-index: 10;
+        z-index: 20;
+
+        @include phones {
+            display: none;
+        }
     }
 
     &::after {
@@ -14,6 +18,11 @@
         position: absolute;
         left: 0;
         bottom: rem(-160px);
+        z-index: 10;
+
+        @include phones {
+            display: none;
+        }
     }
 
     @include phones {
@@ -57,6 +66,7 @@
         align-items: center;
         text-align: center;
         justify-content: space-between;
+        background-size: 30%;
     }
 }
 
@@ -84,6 +94,7 @@
     font-weight: bold;
     font-size: rem(27px);
     color: #000;
+
     @include tablets {
         margin-bottom: rem(25px);
     }
@@ -91,8 +102,10 @@
 
 .reviews__content-text {
     max-width: 78%;
+
     @include tablets {
         max-width: 100%;
+
         @include tablets {
             margin-bottom: rem(25px);
         }

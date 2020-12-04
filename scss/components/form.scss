@@ -1,4 +1,4 @@
-.delivery-section {
+.form-section {
     background: url('./img/bg/delivery/backgr.png');
 
     &::after {
@@ -24,7 +24,7 @@
     }
 }
 
-.delivery-container {
+.form-container {
     color: $darkgreen;
     align-items: center;
 
@@ -33,16 +33,22 @@
     }
 
     @include phones {
+        justify-content: space-evenly;
         max-width: 100%;
     }
 }
 
-.delivery-title {
+.form-title {
     color: $darkgreen;
     margin-bottom: rem(60px);
 
     @include tablets {
         margin-bottom: rem(40px);
+    }
+
+    @include phones {
+        margin-bottom: 0;
+        font-size: rem(35px);
     }
 }
 
@@ -121,6 +127,10 @@
         &:focus {
             outline: none;
             border: rem(3px) solid #DEE2BD;
+        }
+
+        @include phones {
+            max-height: rem(152px);
         }
     }
 
