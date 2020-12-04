@@ -536,7 +536,7 @@ img {
 @media screen and (max-width: 480px) {
   .hero-container {
     background: url("./img/bg/hero/comp.png") center 15%/80% auto no-repeat;
-    padding: 1.3333333333rem 0 6.1111111111rem;
+    padding: 1.3333333333rem 0 20%;
   }
 }
 
