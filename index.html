@@ -138,9 +138,11 @@
                     <h3 class="section__title rewiews-section__title">Отзывы</h3>
                     <div class="rewiews">
                         <div class="reviews__item">
-                            <div class="reviews__avatar">
-                                <img src="./img/rewiews-pic/photo1.png" alt="photo" class="reviews__photo">
-                            </div>
+                            <picture class="reviews__avatar">
+                                <source media="(min-width: 768px)" srcset="./img/rewiews-pic/photo1.png">
+                                <source media="(min-width: 480px)" srcset="./img/rewiews-pic/photo2.png">
+                                <img src="./img/rewiews-pic/photo3.png" alt="photo" class="reviews__photo">
+                            </picture>
                             <article class="reviews__content">
                                 <h4 class="reviews__content-title">Лучший перекус</h4>
                                 <div class="reviews__content-text">
@@ -250,21 +252,49 @@
                 </container>
             </section>
             <section class="section map-section">
-                <div class="container map-container">
+                <contaner class="container map-container">
                     <div class="map">
                     </div>
-                </div>
-            </section>
-            <!-- <section class="section footer-section">
-                <container class="container footer-container">
-                    <div class="footer">
+                    <footer class="footer">
                         <address class="adress">
                             <div class="adress__title">Москва, ул.Новый Арбат, д.31/12</div>
                             <a href="tel:+78009039090" class="phone__number">8 800 903 90 90</a>
                         </address>
-                    </div>
-                </container>
-            </section> -->
+                        <nav class="socials">
+                            <ul class="socials__list">
+                                <li class="socials__item">
+                                    <a href="https://vk.com/" class="socials__link socials__link--vk">
+                                        <svg class="socials__img socials__img--vk">
+                                            <use xlink:href="./img/sprite.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="https://facebook.com/" class="socials__link socials__link--fb">
+                                        <svg class="socials__img socials__img--fb">
+                                            <use xlink:href="./img/sprite.svg#fb"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="https://instagram.com/" class="socials__link socials__link--inst">
+                                        <svg class="socials__img socials__img--inst">
+                                            <use xlink:href="./img/sprite.svg#inst"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="https://vk.com/" class="socials__link socials__link--twitter">
+                                        <svg class="socials__img socials__img--twitter">
+                                            <use xlink:href="./img/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </footer>
+                </contaner>
+            </section>
         </div>
     </div>
     <nav class="fixed-menu">

@@ -1,4 +1,15 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: rem(100px);
+}
+
 .adress__title {
     font-size: rem(21px);
     color: #000;
+    font-style: normal;
 }

@@ -1285,13 +1285,51 @@ img {
   display: block;
 }
 
-.map-section {
+.map-container {
+  position: relative;
   background: url("./img/bg/map/map.png");
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.5555555556rem;
 }
 
 .adress__title {
   font-size: 1.1666666667rem;
   color: #000;
+  font-style: normal;
+}
+
+.socials {
+  width: 20%;
+}
+
+.socials__list {
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 0.8333333333rem;
+}
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__img {
+  width: 20px;
+  height: 20px;
+  fill: #B3B3B3;
+  transition: 0.3s;
+}
+.socials__img:hover {
+  fill: #000;
+  transition: 0.3s;
 }
 
 .fixed-menu {
