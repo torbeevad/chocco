@@ -7,10 +7,18 @@
     align-items: center;
     height: rem(100px);
     padding-right: 5%;
+
+    @include phones {
+        padding: right 0;
+    }
 }
 
 .adress__title {
     font-size: rem(21px);
     color: #000;
     font-style: normal;
+
+    @include phones {
+        font-size: rem(19px);
+    }
 }

@@ -1300,11 +1300,25 @@ img {
   height: 5.5555555556rem;
   padding-right: 5%;
 }
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: right 0;
+  }
+}
 
 .adress__title {
   font-size: 1.1666666667rem;
   color: #000;
   font-style: normal;
+}
+@media screen and (max-width: 480px) {
+  .adress__title {
+    font-size: 1.0555555556rem;
+  }
+}
+
+.socials {
+  width: 30%;
 }
 
 .socials__list {
