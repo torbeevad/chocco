@@ -1287,27 +1287,24 @@ img {
 
 .map-container {
   position: relative;
-  background: url("./img/bg/map/map.png");
+  background: url("./img/bg/map/map.png") center center no-repeat;
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
   bottom: 0;
   background-color: #fff;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 5.5555555556rem;
+  padding-right: 5%;
 }
 
 .adress__title {
   font-size: 1.1666666667rem;
   color: #000;
   font-style: normal;
-}
-
-.socials {
-  width: 20%;
 }
 
 .socials__list {
@@ -1322,8 +1319,8 @@ img {
 }
 
 .socials__img {
-  width: 20px;
-  height: 20px;
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
   fill: #B3B3B3;
   transition: 0.3s;
 }

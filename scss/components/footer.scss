@@ -1,11 +1,12 @@
 .footer {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     bottom: 0;
     background-color: #fff;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     height: rem(100px);
+    padding-right: 5%;
 }
 
 .adress__title {

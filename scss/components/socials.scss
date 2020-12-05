@@ -1,7 +1,3 @@
-.socials {
-    width: 20%;
-}
-
 .socials__list {
     display: flex;
 }
@@ -15,8 +11,8 @@
 }
 
 .socials__img {
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     fill: #B3B3B3;
     transition: 0.3s;
 
