@@ -621,6 +621,14 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
+}
+
+.menu__item {
+  margin-right: 1%;
+}
+.menu__item:last-child {
+  margin-right: 0;
 }
 
 .phone {
@@ -638,6 +646,7 @@ img {
 .phone__number {
   font-style: normal;
   font-size: 1.2222222222rem;
+  white-space: nowrap;
 }
 
 .phone__icon {
@@ -1331,4 +1340,95 @@ img {
   width: 1rem;
   height: 1rem;
   border: 0.0555555556rem solid #FFF;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  top: 3%;
+  right: 100%;
+  z-index: 50;
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .burger {
+    opacity: 1;
+    right: 2%;
+  }
+}
+.burger:hover {
+  cursor: pointer;
+}
+.burger:active .menu--tablets {
+  left: 0;
+  transition: 0.2s;
+}
+
+.burger__line {
+  height: 20%;
+  background: #fff;
+  border-radius: 100px;
+}
+
+.menu--tablets {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #333537;
+  font-size: 2rem;
+  top: 0;
+  left: 100%;
+  z-index: 50;
+}
+.menu--tablets:hover {
+  left: 0;
+  cursor: auto;
+}
+.menu--tablets:hover .burger__closemark {
+  display: flex;
+}
+
+.menu--tablets .menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu--tablets .menu__item {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+.menu--tablets .menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.burger__closemark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  top: 3%;
+  right: 2%;
+  position: fixed;
+  display: none;
+}
+.burger__closemark:hover {
+  cursor: pointer;
+}
+.burger__closemark:active .menu--tablets {
+  left: 100%;
+}
+
+.burger__closemark--icon {
+  width: 20px;
+  height: 20px;
 }

@@ -23,6 +23,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    white-space: nowrap;
+}
+
+.menu__item {
+    margin-right: 1%;
+    &:last-child{
+        margin-right: 0;
+    }
 }
 
 .phone {
@@ -38,6 +46,7 @@
 .phone__number {
     font-style: normal;
     font-size: rem(22px);
+    white-space: nowrap;
 }
 
 .phone__icon {
