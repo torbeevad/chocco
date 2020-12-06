@@ -40,6 +40,11 @@
         flex-direction: row;
         text-align: left;
         align-items: center;
+        margin-bottom: rem(20px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -56,6 +61,7 @@
 
     @include phones {
         margin-right: rem(20px);
+        margin-bottom: 0;
     }
 }
 

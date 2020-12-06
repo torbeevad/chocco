@@ -86,6 +86,11 @@
         width: rem(140px);
         height: rem(140px);
         margin-bottom: rem(30px);
+        margin-right: 0;
+    }
+
+    @include tablets {
+        margin-right: 0;
     }
 }
 

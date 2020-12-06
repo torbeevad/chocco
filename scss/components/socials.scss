@@ -1,13 +1,17 @@
+.socials {
+    width: rem(140px);
+}
+
 .socials__list {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .socials__item {
-    margin-right: rem(15px);
-
-    &:last-child {
-        margin-right: 0;
-    }
+    width: rem(20px);
+    height: rem(20px);
 }
 
 .socials__img {
