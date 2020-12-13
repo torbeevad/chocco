@@ -3,34 +3,97 @@
 }
 
 .slider {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .slider__arrow {
+    position: absolute;
+    top: 40%;
+
+    @include tablets {
+        top: 15%;
+    }
+}
+
+.slider__arrow--left {
+    left: -4%;
+
+    @include tablets {
+        left: 20%;
+    }
+
+    @include phones {
+        left: 0;
+    }
+}
+
+.slider__arrow--right {
+    right: -4%;
+
+    @include tablets {
+        right: 20%;
+    }
+
+    @include phones {
+        right: 0;
+    }
+}
+
+.slider__arrow--pict {
     width: rem(15px);
     stroke: black;
 }
 
-.slider__arrow--left {
+.slider__arrow--pict--left {
     transform: rotate(180deg);
 }
 
 .slider__item {
     display: flex;
     justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .slider__col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 46%;
+    width: 50%;
+
+    @include tablets {
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+.slider__col--left {
+    justify-content: center;
+
+    @include tablets {
+        width: 50%;
+    }
+
+    @include phones {
+        width: 70%;
+    }
 }
 
 .slider__col--right {
-    padding-right: 7%;
+    padding-left: 7%;
+    padding-right: 4%;
+
+    @include tablets {
+        padding: 0;
+    }
 }
 
 .slider__structure--block {
@@ -43,6 +106,10 @@
     background-color: #60AACC;
     border-radius: 4px;
     margin-bottom: rem(23px);
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .slider__structure--pic {
@@ -57,6 +124,10 @@
     font-size: rem(15px);
     font-style: bold;
     margin-top: 5%;
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .slider__title {
@@ -69,6 +140,7 @@
 
 .slider__text {
     margin-bottom: rem(23px);
+    text-align: center;
 }
 
 .slider__values--row {
@@ -85,13 +157,13 @@
 .slider__values--price {
     font-style: normal;
     font-weight: 300;
-    font-size: 60px;
+    font-size: rem(60px);
     color: #000;
 }
 
 .slider__values--price-curr {
     text-transform: lowercase;
-    font-size: 42px;
+    font-size: rem(42px);
 }
 
 .slider__values--cell {
@@ -102,5 +174,12 @@
 
 .slider__values--worth {
     font-weight: bold;
-    color:#000;
+    color: #000;
+}
+
+.slider__btn {
+    @include phones {
+        font-size: rem(16px);
+        padding: rem(20px) rem(28px);
+    }
 }
