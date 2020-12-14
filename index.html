@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chocco</title>
     <link rel="stylesheet" href="./main.css">
+    <script src="./main.js"></script>
 </head>
 
 <body class="body">
@@ -176,10 +177,12 @@
                                         </tr>
                                         <tr class="slider__values--row">
                                             <td class="slider__values--cell">
-                                                <span class="slider__values--price">140 <span class="slider__values--price-curr">₽</span></span>
+                                                <span class="slider__values--price">140 <span
+                                                        class="slider__values--price-curr">₽</span></span>
                                             </td>
                                             <td class="slider__values--cell">
-                                                <button type="submit" class="slider__btn btn btn-theme-green">Заказать</button>
+                                                <button type="submit"
+                                                    class="slider__btn btn btn-theme-green">Заказать</button>
                                             </td>
                                         </tr>
                                     </table>
@@ -192,7 +195,6 @@
                             </svg>
                         </div>
                     </div>
-
                 </container>
             </section>
             <section class="section reviews-section">
@@ -396,40 +398,44 @@
             </li>
         </ul>
     </nav>
-    <div class="burger">
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <nav class="menu--tablets">
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a href="#" class="menu__link">О нас</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Батончики</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Команда</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Меню</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Отзывы</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Как мы работаем</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Контакты</a>
-                </li>
-            </ul>
-            <div class="burger__closemark">
-                <svg class="burger__closemark--icon">
-                    <use xlink:href="./img/sprite.svg#closemark"></use>
-                </svg>
-            </div>
-        </nav>
+    <div>
+        <div class="burger" id="toggle">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+        </div>
+        <div class="overlay" id="overlay">
+            <nav class="menu--tablets">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Батончики</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Команда</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Меню</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Как мы работаем</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger__closemark">
+            <svg class="burger__closemark--icon">
+                <use xlink:href="./img/sprite.svg#closemark"></use>
+            </svg>
+        </div>
     </div>
 
 

@@ -1647,10 +1647,6 @@ img {
 .burger:hover {
   cursor: pointer;
 }
-.burger:active .menu--tablets {
-  left: 0;
-  transition: 0.2s;
-}
 
 .burger__line {
   height: 20%;
@@ -1658,7 +1654,7 @@ img {
   border-radius: 100px;
 }
 
-.menu--tablets {
+.overlay {
   display: flex;
   justify-content: center;
   position: fixed;
@@ -1671,48 +1667,40 @@ img {
   left: 100%;
   z-index: 50;
 }
-.menu--tablets:hover {
+.overlay:hover {
   left: 0;
   cursor: auto;
 }
-.menu--tablets:hover .burger__closemark {
-  display: flex;
-}
 
-.menu--tablets .menu__list {
+.menu__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.menu--tablets .menu__item {
+.menu__item {
   margin-right: 0;
   margin-bottom: 20px;
 }
-.menu--tablets .menu__item:last-child {
+.menu__item:last-child {
   margin-bottom: 0;
-}
-
-.burger__closemark {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25px;
-  height: 25px;
-  top: 3%;
-  right: 2%;
-  position: fixed;
-  display: none;
-}
-.burger__closemark:hover {
-  cursor: pointer;
-}
-.burger__closemark:active .menu--tablets {
-  left: 100%;
 }
 
 .burger__closemark--icon {
   width: 20px;
   height: 20px;
+}
+
+.burger--active .burger__closemark {
+  display: flex;
+}
+
+.overlay--active {
+  left: 0;
+  transition: 0.2s;
+}
+
+.body--active-menu {
+  overflow: hidden;
 }

@@ -18,6 +18,11 @@
     &:hover {
         cursor: pointer;
     }
+
+    &:active .menu--tablets {
+        left: 0;
+        transition: 0.2s;
+    }
 }
 
 .burger__line {
@@ -26,7 +31,7 @@
     border-radius: 100px;
 }
 
-.overlay {
+.menu--tablets {
     display: flex;
     justify-content: center;
     position: fixed;
@@ -43,16 +48,20 @@
         left: 0;
         cursor: auto;
     }
+
+    &:hover .burger__closemark {
+        display: flex;
+    }
 }
 
-.menu__list {
+.menu--tablets .menu__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.menu__item {
+.menu--tablets .menu__item {
     margin-right: 0;
     margin-bottom: 20px;
 
@@ -62,22 +71,27 @@
     }
 }
 
-.burger__closemark--icon {
-    width: 20px;
-    height: 20px;
-}
+.burger__closemark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    top: 3%;
+    right: 2%;
+    position: fixed;
+    display: none;
 
-.burger--active {
-    .burger__closemark {
-        display: flex;
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active .menu--tablets {
+        left: 100%;
     }
 }
 
-.overlay--active {
-    left: 0;
-    transition: 0.2s;
-}
-
-.body--active-menu {
-    overflow: hidden;
+.burger__closemark--icon {
+    width: 20px;
+    height: 20px;
 }
