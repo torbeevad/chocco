@@ -1647,10 +1647,6 @@ img {
 .burger:hover {
   cursor: pointer;
 }
-.burger:active .menu--tablets {
-  left: 0;
-  transition: 0.2s;
-}
 
 .burger__line {
   height: 20%;
@@ -1658,9 +1654,10 @@ img {
   border-radius: 100px;
 }
 
-.menu--tablets {
+.overlay {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1671,30 +1668,23 @@ img {
   left: 100%;
   z-index: 50;
 }
-.menu--tablets:hover {
-  left: 0;
-  cursor: auto;
-}
-.menu--tablets:hover .burger__closemark {
-  display: flex;
-}
 
-.menu--tablets .menu__list {
+.menu--tablets .menu--tablets__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.menu--tablets .menu__item {
+.menu--tablets .menu--tablets__item {
   margin-right: 0;
   margin-bottom: 20px;
 }
-.menu--tablets .menu__item:last-child {
+.menu--tablets .menu--tablets__item:last-child {
   margin-bottom: 0;
 }
 
-.burger__closemark {
+.close {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1704,15 +1694,30 @@ img {
   right: 2%;
   position: fixed;
   display: none;
+  z-index: 50;
 }
-.burger__closemark:hover {
+.close:hover {
   cursor: pointer;
 }
-.burger__closemark:active .menu--tablets {
-  left: 100%;
-}
 
-.burger__closemark--icon {
+.close--icon {
   width: 20px;
   height: 20px;
+}
+
+.burger--active {
+  display: none;
+}
+
+.overlay--active {
+  left: 0;
+  transition: 0.2s;
+}
+
+.close--active {
+  display: flex;
+}
+
+.body--active-menu {
+  overflow: hidden;
 }
