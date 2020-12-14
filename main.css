@@ -969,6 +969,7 @@ img {
 
 .slider__structure--block {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -977,6 +978,22 @@ img {
   background-color: #60AACC;
   border-radius: 4px;
   margin-bottom: 1.2777777778rem;
+}
+.slider__structure--block:hover {
+  cursor: pointer;
+}
+.slider__structure--block:hover .structure {
+  left: 100%;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.slider__structure--block:hover .structure::after {
+  content: "";
+  width: 5rem;
+  height: 15rem;
+  position: absolute;
+  bottom: 0;
+  left: -90px;
 }
 @media screen and (max-width: 768px) {
   .slider__structure--block {
@@ -1055,6 +1072,51 @@ img {
     font-size: 0.8888888889rem;
     padding: 1.1111111111rem 1.5555555556rem;
   }
+}
+
+.structure {
+  left: 9999px;
+  top: 0;
+  position: absolute;
+  min-width: 15.1666666667rem;
+  min-height: 19.1111111111rem;
+  background: #F2F5F4;
+  padding: 1.3888888889rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.structure__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.structure__item {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  font-size: 16px;
+  align-items: center;
+  font-weight: 500;
+  color: #000;
+}
+
+.structure__icon-box {
+  margin-right: 10%;
+}
+
+.stricture__icon {
+  width: 1.7777777778rem;
+  height: 1.7777777778rem;
+}
+
+.structure__name {
+  flex: 1;
+  text-align: left;
 }
 
 .reviews-section {
