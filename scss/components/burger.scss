@@ -41,14 +41,14 @@
     z-index: 50;
 }
 
-.menu--tablets .menu--tablets__list {
+.menu-tablets .menu-tablets__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.menu--tablets .menu--tablets__item {
+.menu-tablets .menu-tablets__item {
     margin-right: 0;
     margin-bottom: 20px;
 
@@ -74,7 +74,7 @@
     }
 }
 
-.close--icon {
+.close-icon {
     width: 20px;
     height: 20px;
 }

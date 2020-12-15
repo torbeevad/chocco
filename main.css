@@ -1731,18 +1731,18 @@ img {
   z-index: 50;
 }
 
-.menu--tablets .menu--tablets__list {
+.menu-tablets .menu-tablets__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.menu--tablets .menu--tablets__item {
+.menu-tablets .menu-tablets__item {
   margin-right: 0;
   margin-bottom: 20px;
 }
-.menu--tablets .menu--tablets__item:last-child {
+.menu-tablets .menu-tablets__item:last-child {
   margin-bottom: 0;
 }
 
@@ -1762,7 +1762,7 @@ img {
   cursor: pointer;
 }
 
-.close--icon {
+.close-icon {
   width: 20px;
   height: 20px;
 }
