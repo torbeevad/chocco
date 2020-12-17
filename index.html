@@ -258,33 +258,71 @@
                 <container class="container rewiews-container">
                     <h3 class="section__title rewiews-section__title">Отзывы</h3>
                     <div class="rewiews">
-                        <div class="reviews__item">
-                            <picture class="reviews__avatar">
-                                <source media="(min-width: 768px)" srcset="./img/rewiews-pic/photo1.png">
-                                <source media="(min-width: 480px)" srcset="./img/rewiews-pic/photo2.png">
-                                <img src="./img/rewiews-pic/photo3.png" alt="photo" class="reviews__photo">
-                            </picture>
-                            <article class="reviews__content">
-                                <h4 class="reviews__content-title">Лучший перекус</h4>
-                                <div class="reviews__content-text">
-                                    <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение
-                                        дня
-                                        сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе
-                                        позволить. А батончик – он всегда под рукой. Это приятно и удобно. </p>
-                                </div>
-                                <div class="content-autor">Алёна Хмельницкая</div>
-                            </article>
-                        </div>
-                        <ul class="reviews__list">
-                            <li class="reviews__human">
+                        <ul class="rewiews__list">
+                            <li class="reviews__item reviews__item--active" data-linked-with="one">
+                                <picture class="reviews__avatar">
+                                    <source media="(min-width: 768px)" srcset="./img/rewiews-pic/photo1.png">
+                                    <source media="(min-width: 480px)" srcset="./img/rewiews-pic/photo2.png">
+                                    <img src="./img/rewiews-pic/photo3.png" alt="photo" class="reviews__photo">
+                                </picture>
+                                <article class="reviews__content">
+                                    <h4 class="reviews__content-title">Лучший перекус</h4>
+                                    <div class="reviews__content-text">
+                                        <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В
+                                            течение
+                                            дня
+                                            сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе
+                                            позволить. А батончик – он всегда под рукой. Это приятно и удобно. </p>
+                                    </div>
+                                    <div class="content-autor">Алёна Хмельницкая</div>
+                                </article>
+                            </li>
+                            <li class="reviews__item" data-linked-with="two">
+                                <picture class="reviews__avatar">
+                                    <source media="(min-width: 768px)" srcset="./img/rewiews-pic/photo2.png">
+                                    <source media="(min-width: 480px)" srcset="../img/rewiews-pic/photo3.png">
+                                    <img src="./img/rewiews-pic/photo1.png" alt="photo" class="reviews__photo">
+                                </picture>
+                                <article class="reviews__content">
+                                    <h4 class="reviews__content-title">Лучший перекус</h4>
+                                    <div class="reviews__content-text">
+                                        <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что
+                                            до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда
+                                            выручают в этом плане. Спасибо производителю за этот качественный и
+                                            экологичный продукт. </p>
+                                    </div>
+                                    <div class="content-autor">Алёна Хмельницкая</div>
+                                </article>
+                            </li>
+                            <li class="reviews__item" data-linked-with="three">
+                                <picture class="reviews__avatar">
+                                    <source media="(min-width: 768px)" srcset="./img/rewiews-pic/photo3.png">
+                                    <source media="(min-width: 480px)" srcset="./img/rewiews-pic/photo1.png">
+                                    <img src="./img/rewiews-pic/photo2.png" alt="photo" class="reviews__photo">
+                                </picture>
+                                <article class="reviews__content">
+                                    <h4 class="reviews__content-title">Лучший перекус</h4>
+                                    <div class="reviews__content-text">
+                                        <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с
+                                            конкурентами, однако, как говорится – оно того стоит. Нравится носить с
+                                            собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют
+                                            голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем
+                                            минус.</p>
+                                    </div>
+                                    <div class="content-autor">Алёна Хмельницкая</div>
+                                </article>
+                            </li>
+                        </ul>
+                        <ul class="reviews__list-bottom">
+                            <li class="reviews__human reviews__human--active" data-open="one">
                                 <a href="#" class="reviews__human-link"><img src="./img/rewiews-pic/photo1.png"
                                         alt="human-photo" class="reviews__human-photo"></a>
                             </li>
-                            <li class="reviews__human">
+                            <li class="reviews__human" data-open="two">
                                 <a href="#" class="reviews__human-link"><img src="./img/rewiews-pic/photo2.png"
                                         alt="human-photo" class="reviews__human-photo"></a>
                             </li>
-                            <li class="reviews__human">
+                            <li class="reviews__human" data-open="three">
                                 <a href="#" class="reviews__human-link"><img src="./img/rewiews-pic/photo3.png"
                                         alt="human-photo" class="reviews__human-photo"></a>
                             </li>
@@ -495,7 +533,10 @@
         </div>
     </div>
 
-    <script src="./main.js"></script>
+    <script src="./scripts/jquery-3.5.1.min.js"></script>
+
+    <script src="./scripts/burger.js"></script>
+    <script src="./scripts/rewiews.js"></script>
 
 </body>
 

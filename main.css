@@ -1173,14 +1173,23 @@ img {
   transform: translate(-50%);
 }
 
+.rewiews__list {
+  position: relative;
+  margin-bottom: 0.8333333333rem;
+}
+
 .reviews__item {
   display: flex;
+  position: absolute;
   padding: 2.3333333333rem;
-  position: relative;
   background-color: #F8FAF9;
-  margin-bottom: 0.8333333333rem;
+  left: 9999px;
   background: url("./img/bg/rewiews/bw-berries.png") right 15% no-repeat;
   background-color: #F8FAF9;
+}
+.reviews__item--active {
+  position: static;
+  opacity: 1;
 }
 @media screen and (max-width: 768px) {
   .reviews__item {
@@ -1261,7 +1270,7 @@ img {
   object-fit: cover;
 }
 
-.reviews__list {
+.reviews__list-bottom {
   display: flex;
   justify-content: center;
 }
@@ -1273,8 +1282,12 @@ img {
   border-radius: 50%;
   overflow: hidden;
 }
-.reviews__human:hover {
+.reviews__human--active {
+  width: 4.4444444444rem;
+  height: 4.4444444444rem;
   border: 0.2222222222rem solid #365A49;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .reviews__human-photo {
