@@ -4,6 +4,12 @@
     }
 }
 
+.work-team-desktop {
+    @include tablets {
+        display: none;
+    }
+}
+
 .work-team-container__title {
     font-size: rem(48px);
     color: #000;
@@ -13,32 +19,48 @@
     margin-bottom: rem(50px);
 }
 
-.work-team-desktop__list {
+.work-team__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
-.work-team-desktop__item {
+.work-team__item {
     display: flex;
     position: relative;
     flex-direction: column;
     max-width: 23%;
+
+    &--active {
+        .work-team__name-treangle {
+            transform: translateX(180deg);
+        }
+    }
+
+    @include tablets {
+        margin-bottom: rem(10px);
+        max-width: 60%;
+    }
 }
 
-.work-team-desktop__photo-block {
+.work-team__photo-block {
+    display: flex;
+    justify-content: center;
     margin-bottom: rem(20px);
 }
 
-.work-team-desktop__desc {
+.work-team__desc {
     display: flex;
     flex-direction: column;
-    position: absolute;
     top: 100%;
     text-align: center;
 }
 
-.work-team-desktop__name-btn {
+.work-team__name-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,18 +76,32 @@
     }
 }
 
-.work-team-desktop__name {
+.work-team__desc-block {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: 0.3s;
+
+    @include tablets {
+        position: static;
+    }
+}
+
+.work-team__name {
     margin-right: rem(10px);
     white-space: nowrap;
 }
 
-.work-team-desktop__name-treangle {
+.work-team__name-treangle {
     width: 10px;
     height: 10px;
     fill: #365A49;
+    flex-shrink: 0;
 }
 
-.work-team-desktop__job {
+.work-team__job {
     color: #000;
     margin-bottom: rem(10px);
 }
