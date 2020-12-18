@@ -139,23 +139,23 @@
                 <container class="container slider-container">
 
                     <div class="slider">
-                        <div class="slider__arrow slider__arrow--left">
-                            <svg class="slider__arrow--pict slider__arrow--pict--left">
+                        <div class="slider__arrow slider__arrow-left">
+                            <svg class="slider__arrow-pict slider__arrow-pict-left">
                                 <use xlink:href="./img/sprite.svg#arrow"></use>
                             </svg>
                         </div>
                         <ul class="slider__list">
                             <li class="slider__item">
-                                <div class="slider__col slider__col--left">
+                                <div class="slider__col slider__col-left">
                                     <img src="./img/slider/product.png" alt="chocolate">
                                 </div>
-                                <div class="slider__col slider__col--right">
+                                <div class="slider__col slider__col-right">
                                     <div class="slider__structure">
-                                        <div class="slider__structure--block">
-                                            <svg class="slider__structure--pic">
+                                        <div class="slider__structure-block">
+                                            <svg class="slider__structure-pic">
                                                 <use xlink:href="./img/sprite.svg#chocolate-bar"></use>
                                             </svg>
-                                            <span class="slider__structure--text">Состав</span>
+                                            <span class="slider__structure-text">Состав</span>
                                             <div class="structure">
                                                 <ul class="structure__list">
                                                     <li class="structure__item">
@@ -222,37 +222,182 @@
                                             входят: сухое молоко, заменитель сахара и какао бобы.</p>
                                     </div>
                                     <table class="slider__values">
-                                        <tr class="slider__values-row">
-                                            <td class="slider__values-cell">
-                                                <span class="slider__values--tag">Калорийность</span>
-                                                <span class="slider__values--worth">110 ккал</span>
-                                            </td>
-                                            <td class="slider__values-cell">
-                                                <span class="slider__values--tag">Вес</span>
-                                                <span class="slider__values--worth">95 грамм</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="slider__values-row">
-                                            <td class="slider__values-cell">
-                                                <span class="slider__values--price">140 <span
-                                                        class="slider__values--price-curr">₽</span></span>
-                                            </td>
-                                            <td class="slider__values-cell">
+                                        <div class="slider__values-row">
+                                            <div class="slider__values-cell">
+                                                <span class="slider__values-tag">Калорийность</span>
+                                                <span class="slider__values-worth">110 ккал</span>
+                                            </div>
+                                            <div class="slider__values-cell">
+                                                <span class="slider__values-tag">Вес</span>
+                                                <span class="slider__values-worth">95 грамм</span>
+                                            </div>
+                                        </div>
+                                        <div class="slider__values-row">
+                                            <div class="slider__values-cell">
+                                                <span class="slider__values-price">140 <span
+                                                        class="slider__values-price-curr">₽</span></span>
+                                            </div>
+                                            <div class="slider__values-cell">
                                                 <button type="submit"
                                                     class="slider__btn btn btn-theme-green">Заказать</button>
-                                            </td>
-                                        </tr>
+                                            </div>
+                                        </div>
                                     </table>
                                 </div>
                             </li>
                         </ul>
-                        <div class="slider__arrow slider__arrow--right">
-                            <svg class="slider__arrow-pict slider__arrow-pict--right">
+                        <div class="slider__arrow slider__arrow-right">
+                            <svg class="slider__arrow-pict slider__arrow-pict-right">
                                 <use xlink:href="./img/sprite.svg#arrow"></use>
                             </svg>
                         </div>
                     </div>
                 </container>
+            </section>
+            <section class="section work-team-section">
+                <div class="container work-team-container">
+                    <h2 class="work-team-container__title">Команда</h2>
+                    <div class="work-team-desktop">
+                        <ul class="work-team-desktop__list">
+                            <li class="work-team-desktop__item">
+                                <div class="work-team-desktop__photo-block"><img src="./img/work-team/photo/tech.png"
+                                        alt="photo" class="work-team-desktop__photo"></div>
+                                <button class="work-team-desktop__name-btn"><span class="work-team-desktop__name">Борис
+                                        Федорович</span><svg class="work-team-desktop__name-treangle">
+                                        <use xlink:href="./img/sprite.svg#treangle"></use>
+                                    </svg></button>
+                                <div class="work-team-desctop__desc-block">
+                                    <div class="work-team-desktop__desc">
+                                        <h4 class="work-team-desktop__job">Главный технолог</h4>
+                                        <span class="work-team-desktop__job-desc">Отвечает за вкусовые качества
+                                            и калорийность.
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="work-team-desktop__item">
+                                <div class="work-team-desktop__photo-block"><img src="./img/work-team/photo/packer.png"
+                                        alt="photo" class="work-team-desktop__photo"></div>
+                                <button class="work-team-desktop__name-btn"><span class="work-team-desktop__name">Алла
+                                        Иванова</span><svg class="work-team-desktop__name-treangle">
+                                        <use xlink:href="./img/sprite.svg#treangle"></use>
+                                    </svg></button>
+                                <div class="work-team-desctop__desc-block">
+                                    <div class="work-team-desktop__desc">
+                                        <h4 class="work-team-desktop__job">Специалист по упаковке</h4>
+                                        <span class="work-team-desktop__job-desc">Автор запоминающегося стиля
+                                            наших батончиков.
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="work-team-desktop__item">
+                                <div class="work-team-desktop__photo-block"><img
+                                        src="./img/work-team/photo/operator.png" alt="photo"
+                                        class="work-team-desktop__photo"></div>
+                                <button class="work-team-desktop__name-btn"><span class="work-team-desktop__name">Кирилл
+                                        Матросов</span><svg class="work-team-desktop__name-treangle">
+                                        <use xlink:href="./img/sprite.svg#treangle"></use>
+                                    </svg></button>
+                                <div class="work-team-desctop__desc-block">
+                                    <div class="work-team-desktop__desc">
+                                        <h4 class="work-team-desktop__job">Оператор</h4>
+                                        <span class="work-team-desktop__job-desc">С радостью поможет подобрать батончики
+                                            и оформить заказ.
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="work-team-desktop__item">
+                                <div class="work-team-desktop__photo-block"><img src="./img/work-team/photo/pr.png"
+                                        alt="photo" class="work-team-desktop__photo"></div>
+                                <button class="work-team-desktop__name-btn"><span class="work-team-desktop__name">Мила
+                                        Рыжкова</span><svg class="work-team-desktop__name-treangle">
+                                        <use xlink:href="./img/sprite.svg#treangle"></use>
+                                    </svg></button>
+                                <div class="work-team-desctop__desc-block">
+                                    <div class="work-team-desktop__desc">
+                                        <h4 class="work-team-desktop__job">PR, маркетинг</h4>
+                                        <span class="work-team-desktop__job-desc">По всем вопросам сотрудничества
+                                            и рекламы писать только Миле.
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="work-team-mobile">
+                        <ul class="work-team-mobile__list">
+                            <li class="work-team-mobile__item">
+                                <button class="work-team-mobile__name-btn"><span class="work-team-mobile__name">Борис
+                                        Федорович</span><svg class="work-team-desktop__name-treangle">
+                                        <use xlink:href="./img/sprite.svg#treangle"></use>
+                                    </svg></button>
+                                <div class="work-team-mobile__desc-block">
+                                    <div class="work-team-mobile__photo-block"><img src="./img/work-team/photo/tech.png"
+                                            alt="photo" class="work-team-mobile__photo"></div>
+                                    <div class="work-team-mobile__desc">
+                                        <h4 class="work-team-mobile__job">Главный технолог</h4>
+                                        <span class="work-team-mobile__job-desc">Отвечает за вкусовые качества
+                                            и калорийность.
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="work-team-mobile__item">
+                                <button class="work-team-mobile__name-btn"><span class="work-team-mobile__name">Алла
+                                        Иванова</span><svg class="work-team-desktop__name-treangle">
+                                        <use xlink:href="./img/sprite.svg#treangle"></use>
+                                    </svg></button>
+                                <div class="work-team-mobile__desc-block">
+                                    <div class="work-team-mobile__photo-block"><img
+                                            src="./img/work-team/photo/packer.png" alt="photo"
+                                            class="work-team-mobile__photo"></div>
+                                    <div class="work-team-mobile__desc">
+                                        <h4 class="work-team-mobile__job">Специалист по упаковке</h4>
+                                        <span class="work-team-mobile__job-desc">Автор запоминающегося стиля
+                                            наших батончиков.
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="work-team-mobile__item">
+                                <button class="work-team-mobile__name-btn"><span class="work-team-mobile__name">Кирилл
+                                        Матросов</span><svg class="work-team-desktop__name-treangle">
+                                        <use xlink:href="./img/sprite.svg#treangle"></use>
+                                    </svg></button>
+                                <div class="work-team-mobile__desc-block">
+                                    <div class="work-team-mobile__photo-block"><img
+                                            src="./img/work-team/photo/operator.png" alt="photo"
+                                            class="work-team-mobile__photo"></div>
+                                    <div class="work-team-mobile__desc">
+                                        <h4 class="work-team-mobile__job">Оператор</h4>
+                                        <span class="work-team-mobile__job-desc">С радостью поможет подобрать батончики
+                                            и
+                                            оформить заказ.
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="work-team-mobile__item">
+                                <button class="work-team-mobile__name-btn"><span class="work-team-mobile__name">Мила
+                                        Рыжкова</span><svg class="work-team-desktop__name-treangle">
+                                        <use xlink:href="./img/sprite.svg#treangle"></use>
+                                    </svg></button>
+                                <div class="work-team-mobile__desc-block">
+                                    <div class="work-team-mobile__photo-block"><img src="./img/work-team/photo/pr.png"
+                                            alt="photo" class="work-team-mobile__photo"></div>
+                                    <div class="work-team-mobile__desc">
+                                        <h4 class="work-team-mobile__job">PR, маркетинг</h4>
+                                        <span class="work-team-mobile__job-desc">По всем вопросам сотрудничества
+                                            и рекламы писать только Миле.
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
             <section class="section reviews-section">
                 <container class="container rewiews-container">
@@ -537,6 +682,7 @@
 
     <script src="./scripts/burger.js"></script>
     <script src="./scripts/rewiews.js"></script>
+    <script src="./scripts/work-team-desktop.js"></script>
 
 </body>
 

@@ -1,0 +1,76 @@
+.work-team-desktop {
+    @include tablets {
+        display: none;
+    }
+}
+
+.work-team-container__title {
+    font-size: rem(48px);
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: rem(50px);
+}
+
+.work-team-mobile__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-team-mobile__item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-team-mobile__desc-block {
+    display: none;
+}
+
+.work-team-mobile__photo-block {
+    margin-bottom: rem(20px);
+}
+
+.work-team-mobile__desc {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+}
+
+.work-team-mobile__name-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: rem(10px);
+    background: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.work-team-mobile__name {
+    margin-right: rem(10px);
+    white-space: nowrap;
+}
+
+.work-team-mobile__name-treangle {
+    width: 10px;
+    height: 10px;
+    fill: #365A49;
+}
+
+.work-team-mobile__job {
+    color: #000;
+    margin-bottom: rem(10px);
+}
