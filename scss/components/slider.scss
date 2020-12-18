@@ -7,6 +7,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .bx-wrapper {
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+    }
 }
 
 .slider__arrow {
