@@ -1584,33 +1584,27 @@ img {
 
 .modal {
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-  background: rgba(102, 102, 102, 0.9);
+  border-radius: 5px;
 }
 
 .modal__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 20%;
-  height: 20%;
-  border-radius: 5px;
   background: #FFF;
+  padding: 30px 60px;
+  font-size: 20px;
 }
 
 .modal__content {
-  margin-bottom: 10%;
+  margin-bottom: 30%;
   font-weight: 500;
   color: #000;
+  white-space: nowrap;
+}
+
+.modal--error .modal__content {
+  color: red;
 }
 
 .radio {

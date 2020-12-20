@@ -1,4 +1,4 @@
-$(".form").submit((e) => {
+$(".form").submit(e => {
     e.preventDefault();
 
 
@@ -9,7 +9,9 @@ $(".form").submit((e) => {
     const to = form.find("[name='to']");
 
     const modal = $("#modal");
-    const buttonClose = modal.find(".btn-modal-close");
+    const content = modal.find(".modal__content");
+
+    modal.removeClass("modal--error");
 
     [firstName, phone, comment, to].forEach(field => {
         field.removeClass("form__entry--error");
@@ -18,9 +20,6 @@ $(".form").submit((e) => {
         }
     })
 
-    modal.removeClass("modal--error");
-    modal.removeClass("modal--active");
-
     const errorField = form.find(".form__entry--error");
 
     if (errorField.length == 0) {
@@ -28,18 +27,31 @@ $(".form").submit((e) => {
             url: "https://webdev-api.loftschool.com/sendmail",
             method: "post",
             data: {
-                firstName: firstName.val(),
+                name: firstName.val(),
                 phone: phone.val(),
                 comment: comment.val(),
                 to: to.val(),
             },
-            // success: () => {
-            //     modal.addClass("modal--active")
-            // },
-            // error: () => {
-            //     modal.addClass("modal--error");
-            // }
+            success: data => {
+                content.text(data.message)
+                $.fancybox.open({
+                    src: "#modal",
+                    type: "inline"
+                })
+            },
+            error: data => {
+                content.text(data.responseJSON.message);
+                $.fancybox.open({
+                    src: "#modal",
+                    type: "inline"
+                })
+                modal.addClass("modal--error");
+            }
         });
     }
+})
 
+$(".btn-modal-close").click(e => {
+    e.preventDefault();
+    $.fancybox.close();
 })
