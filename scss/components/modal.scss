@@ -1,5 +1,4 @@
-
-.modal{
+.modal {
     display: none;
     border-radius: 5px;
 }
@@ -9,9 +8,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     background: #FFF;
     padding: 30px 60px;
     font-size: 20px;
+    @include phones {
+        padding: 0;
+    }
 }
 
 .modal__content {
@@ -19,10 +22,15 @@
     font-weight: 500;
     color: #000;
     white-space: nowrap;
+
+    @include phones {
+        margin-bottom: 15%;
+        white-space: normal;
+    }
 }
 
-.modal--error{
-    .modal__content{
+.modal--error {
+    .modal__content {
         color: red;
     }
 }
