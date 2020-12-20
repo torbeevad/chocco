@@ -879,15 +879,16 @@
                 <container class="container form-container">
                     <h3 class="section__title form-title">Закажите доставку</h3>
                     <form class="form">
+                        <input type="hidden" name="to" value="qwe@mail.com">
                         <div class="form__column">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__entry">
+                                    <input type="text" class="form__entry" name="firstName">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="tel" class="form__entry">
+                                    <input type="tel" class="form__entry" name="phone">
                                 </label>
                             </div>
                             <div class="form__row">
@@ -919,7 +920,7 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Коментарий</div>
-                                    <textarea class="form__entry--textarea"></textarea>
+                                    <textarea class="form__entry--textarea" name="comment"></textarea>
                                 </label>
                             </div>
                             <div class="form__control">
@@ -1077,13 +1078,24 @@
             </svg>
         </div>
     </div>
+    <div id="modal" class="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                Сообщение отправлено
+            </div>
+            <div class="modal__button-box">
+                <a href="#" class="btn btn-theme-green btn-modal-close">Зарыть</a>
+            </div>
+        </div>
+    </div>
 
-    <script src="./scripts/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./scripts/burger.js"></script>
     <script src="./scripts/rewiews.js"></script>
     <script src="./scripts/work-team.js"></script>
     <script src="./scripts/slider.js"></script>
+    <script src="./scripts/form.js"></script>
 
 </body>
 

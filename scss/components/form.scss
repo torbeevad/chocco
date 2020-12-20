@@ -111,6 +111,10 @@
     border: rem(3px) solid transparent;
     font-size: rem(20px);
 
+    &--error {
+        background-color: rgb(250, 220, 220);
+    }
+
     @include tablets {
         height: rem(36px);
     }

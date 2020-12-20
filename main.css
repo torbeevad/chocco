@@ -1127,7 +1127,7 @@ img {
   max-width: 23%;
 }
 .work-team__item--active .work-team__name-treangle {
-  transform: translateX(180deg);
+  transform: rotate(180deg);
 }
 @media screen and (max-width: 768px) {
   .work-team__item {
@@ -1534,6 +1534,9 @@ img {
   border: 0.1666666667rem solid transparent;
   font-size: 1.1111111111rem;
 }
+.form__entry--error {
+  background-color: #fadcdc;
+}
 @media screen and (max-width: 768px) {
   .form__entry {
     height: 2rem;
@@ -1577,6 +1580,37 @@ img {
   .form__button {
     justify-content: center;
   }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: rgba(102, 102, 102, 0.9);
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 20%;
+  border-radius: 5px;
+  background: #FFF;
+}
+
+.modal__content {
+  margin-bottom: 10%;
+  font-weight: 500;
+  color: #000;
 }
 
 .radio {
