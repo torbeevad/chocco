@@ -38,6 +38,7 @@ $(".form").submit(e => {
                     src: "#modal",
                     type: "inline"
                 })
+                $('#form')[0].reset();
             },
             error: data => {
                 content.text(data.responseJSON.message);

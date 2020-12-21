@@ -1585,32 +1585,33 @@ img {
 .modal {
   display: none;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .modal__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   background: #FFF;
-  padding: 30px 60px;
   font-size: 20px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .modal__container {
     padding: 0;
   }
 }
 
 .modal__content {
-  margin-bottom: 30%;
+  margin-bottom: 10%;
   font-weight: 500;
   color: #000;
   white-space: nowrap;
+  align-items: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .modal__content {
-    margin-bottom: 15%;
     white-space: normal;
   }
 }
