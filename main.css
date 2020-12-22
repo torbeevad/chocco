@@ -1417,6 +1417,103 @@ img {
   object-fit: cover;
 }
 
+.accord-section {
+  background: url("../../img/bg/accord/accord-bg.png") center center/cover no-repeat;
+}
+
+.accord-container {
+  padding: 0;
+}
+
+.accord {
+  display: flex;
+  color: #FFF;
+  height: 100%;
+}
+
+.accord__title-box {
+  padding-top: 15%;
+  display: flex;
+}
+
+.accord__title {
+  display: inline;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.6666666667rem;
+  text-transform: uppercase;
+}
+
+.accord__menu {
+  position: absolute;
+  height: 100%;
+  right: 10%;
+}
+@media screen and (max-width: 768px) {
+  .accord__menu {
+    right: 0;
+  }
+}
+
+.accord__list {
+  display: flex;
+  height: 100%;
+}
+
+.accord__item {
+  display: flex;
+}
+.accord__item--active .accord__item-content {
+  width: 27.7777777778rem;
+  padding: 10%;
+}
+@media screen and (max-width: 768px) {
+  .accord__item--active .accord__item-content {
+    width: 100%;
+  }
+}
+
+.accord__item-title-box {
+  max-width: 6.1111111111rem;
+  padding-bottom: 10%;
+}
+.accord__item-title-box-milk {
+  background: url("../../img/bg/accord/milk-bg.png") center center/cover no-repeat;
+}
+.accord__item-title-box-fruit {
+  background: url("../../img/bg/accord/fruit-bg.png") center center/cover no-repeat;
+}
+.accord__item-title-box-wild {
+  background: url("../../img/bg/accord/wild-bg.png") center center/cover no-repeat;
+}
+@media screen and (max-width: 480px) {
+  .accord__item-title-box {
+    max-width: 4.1666666667rem;
+  }
+}
+
+.accord__item-title {
+  vertical-align: bottom;
+  transform: rotate(-90deg) translateX(-725%);
+  transform-origin: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.6666666667rem;
+  white-space: nowrap;
+}
+@media screen and (max-width: 480px) {
+  .accord__item-title {
+    transform: rotate(-90deg) translateX(-825%);
+  }
+}
+
+.accord__item-content {
+  background: #333537;
+  opacity: 0.9;
+  width: 0;
+  overflow: hidden;
+}
+
 .form-section {
   background: url("./img/bg/delivery/backgr.png");
 }
