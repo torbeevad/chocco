@@ -1418,7 +1418,7 @@ img {
 }
 
 .accord-section {
-  background: url("../../img/bg/accord/accord-bg.png") center center/cover no-repeat;
+  background: url("./img/bg/accord/accord-bg.png") center center/cover no-repeat;
 }
 
 .accord-container {
@@ -1478,13 +1478,13 @@ img {
   padding-bottom: 10%;
 }
 .accord__item-title-box-milk {
-  background: url("../../img/bg/accord/milk-bg.png") center center/cover no-repeat;
+  background: url("./img/bg/accord/milk-bg.png") center center/cover no-repeat;
 }
 .accord__item-title-box-fruit {
-  background: url("../../img/bg/accord/fruit-bg.png") center center/cover no-repeat;
+  background: url("./img/bg/accord/fruit-bg.png") center center/cover no-repeat;
 }
 .accord__item-title-box-wild {
-  background: url("../../img/bg/accord/wild-bg.png") center center/cover no-repeat;
+  background: url("./img/bg/accord/wild-bg.png") center center/cover no-repeat;
 }
 @media screen and (max-width: 480px) {
   .accord__item-title-box {

@@ -1,5 +1,5 @@
 .accord-section {
-    background: url('../../img/bg/accord/accord-bg.png') center center / cover no-repeat;
+    background: url('./img/bg/accord/accord-bg.png') center center / cover no-repeat;
 }
 
 .accord-container {
@@ -61,15 +61,15 @@
     padding-bottom: 10%;
 
     &-milk {
-        background: url('../../img/bg/accord/milk-bg.png') center center / cover no-repeat;
+        background: url('./img/bg/accord/milk-bg.png') center center / cover no-repeat;
     }
 
     &-fruit {
-        background: url('../../img/bg/accord/fruit-bg.png') center center / cover no-repeat;
+        background: url('./img/bg/accord/fruit-bg.png') center center / cover no-repeat;
     }
 
     &-wild {
-        background: url('../../img/bg/accord/wild-bg.png') center center / cover no-repeat;
+        background: url('./img/bg/accord/wild-bg.png') center center / cover no-repeat;
     }
 
     @include phones {
