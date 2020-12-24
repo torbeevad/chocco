@@ -18,7 +18,7 @@
 }
 
 .accord__title {
-    
+
     display: inline;
     font-style: normal;
     font-weight: bold;
@@ -29,7 +29,7 @@
 .accord__menu {
     position: absolute;
     height: 100%;
-    right: 10%;
+    right: 5%;
 
     @include tablets {
         right: 0;
@@ -45,19 +45,20 @@
     display: flex;
 
     &--active {
+
         .accord__item-content {
             width: rem(500px);
             padding: 10%;
 
             @include tablets {
-                width: 100%;
+                width: 55vw;
             }
         }
     }
 }
 
 .accord__item-title-box {
-    max-width: rem(110px);
+    max-width: 5vw;
     padding-bottom: 10%;
 
     &-milk {
@@ -73,21 +74,18 @@
     }
 
     @include phones {
-        max-width: rem(75px);
+        max-width: 15vw;
     }
 }
 
 .accord__item-title {
     vertical-align: bottom;
-    transform: rotate(-90deg) translateX(-725%);
+    transform: rotate(-90deg) translateX(-85vh);
     transform-origin: center;
     font-style: normal;
     font-weight: bold;
     font-size: rem(48px);
     white-space: nowrap;
-    @include phones {
-        transform: rotate(-90deg) translateX(-825%);
-    }
 }
 
 .accord__item-content {
@@ -95,4 +93,5 @@
     opacity: 0.9;
     width: 0;
     overflow: hidden;
+    transition: 0.6s;
 }

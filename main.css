@@ -1447,7 +1447,7 @@ img {
 .accord__menu {
   position: absolute;
   height: 100%;
-  right: 10%;
+  right: 5%;
 }
 @media screen and (max-width: 768px) {
   .accord__menu {
@@ -1469,12 +1469,12 @@ img {
 }
 @media screen and (max-width: 768px) {
   .accord__item--active .accord__item-content {
-    width: 100%;
+    width: 55vw;
   }
 }
 
 .accord__item-title-box {
-  max-width: 6.1111111111rem;
+  max-width: 5vw;
   padding-bottom: 10%;
 }
 .accord__item-title-box-milk {
@@ -1488,23 +1488,18 @@ img {
 }
 @media screen and (max-width: 480px) {
   .accord__item-title-box {
-    max-width: 4.1666666667rem;
+    max-width: 15vw;
   }
 }
 
 .accord__item-title {
   vertical-align: bottom;
-  transform: rotate(-90deg) translateX(-725%);
+  transform: rotate(-90deg) translateX(-85vh);
   transform-origin: center;
   font-style: normal;
   font-weight: bold;
   font-size: 2.6666666667rem;
   white-space: nowrap;
-}
-@media screen and (max-width: 480px) {
-  .accord__item-title {
-    transform: rotate(-90deg) translateX(-825%);
-  }
 }
 
 .accord__item-content {
@@ -1512,6 +1507,7 @@ img {
   opacity: 0.9;
   width: 0;
   overflow: hidden;
+  transition: 0.6s;
 }
 
 .form-section {
