@@ -14,7 +14,7 @@
 <body class="body">
     <div class="wrapper">
         <div class="maincontent">
-            <section class="section hero-section">
+            <section class="section hero-section" data-fixed-menu="white" data-section-id="hero">
                 <div class="container hero-container">
                     <header class="header">
                         <svg class="logo">
@@ -23,25 +23,25 @@
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">О нас</a>
+                                    <a href="#" class="menu__link" data-scroll-to="why">О нас</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Батончики</a>
+                                    <a href="#" class="menu__link" data-scroll-to="slider">Батончики</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Команда</a>
+                                    <a href="#" class="menu__link" data-scroll-to="work-team">Команда</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Меню</a>
+                                    <a href="#" class="menu__link" data-scroll-to="accord">Меню</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Отзывы</a>
+                                    <a href="#" class="menu__link" data-scroll-to="rewiews">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Как мы работаем</a>
+                                    <a href="#" class="menu__link" data-scroll-to="video">Как мы работаем</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Контакты</a>
+                                    <a href="#" class="menu__link" data-scroll-to="map">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -59,7 +59,7 @@
                         <div class="hero__subtitle">
                             <p>Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
                         </div>
-                        <a href="#" class="btn btn-theme-white">Заказать</a>
+                        <a href="#" class="btn btn-theme-white" data-scroll-to="form">Заказать</a>
                     </div>
                     <div class="advantages">
                         <ul class="advantages__list">
@@ -85,7 +85,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section why-section">
+            <section class="section why-section" data-fixed-menu="black" data-section-id="why">
                 <container class="container why-container">
                     <div class="headline">
                         <h2 class="section__title why-section__title">Почему chocco?</h2>
@@ -138,7 +138,7 @@
                     </ul>
                 </container>
             </section>
-            <section class="section slider-section">
+            <section class="section slider-section" data-fixed-menu="black" data-section-id="slider">
                 <container class="container slider-container">
                     <div class="slider">
                         <a href="#" class="slider__arrow slider__arrow-left">
@@ -223,7 +223,7 @@
                                         <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также
                                             входят: сухое молоко, заменитель сахара и какао бобы.</p>
                                     </div>
-                                    <table class="slider__values">
+                                    <div class="slider__values">
                                         <div class="slider__values-row">
                                             <div class="slider__values-cell">
                                                 <span class="slider__values-tag">Калорийность</span>
@@ -240,11 +240,11 @@
                                                         class="slider__values-price-curr">₽</span></span>
                                             </div>
                                             <div class="slider__values-cell">
-                                                <button type="submit"
-                                                    class="slider__btn btn btn-theme-green">Заказать</button>
+                                                <button type="submit" class="slider__btn btn btn-theme-green"
+                                                    data-scroll-to="form">Заказать</button>
                                             </div>
                                         </div>
-                                    </table>
+                                    </div>
                                 </div>
                             </li>
                             <li class="slider__item">
@@ -656,7 +656,7 @@
                     </div>
                 </container>
             </section>
-            <section class="section work-team-section">
+            <section class="section work-team-section" data-fixed-menu="black" data-section-id="work-team">
                 <div class="container work-team-container">
                     <h2 class="work-team-container__title">Команда</h2>
                     <div class="work-team-desktop">
@@ -800,7 +800,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section accord-section">
+            <section class="section accord-section" data-fixed-menu="white" data-section-id="accord">
                 <container class="container accord-container">
                     <div class="accord">
                         <div class="accord__title-box">
@@ -864,7 +864,7 @@
                     </div>
                 </container>
             </section>
-            <section class="section reviews-section">
+            <section class="section reviews-section" data-fixed-menu="black" data-section-id="rewiews">
                 <container class="container rewiews-container">
                     <h3 class="section__title rewiews-section__title">Отзывы</h3>
                     <div class="rewiews">
@@ -940,7 +940,7 @@
                     </div>
                 </container>
             </section>
-            <section class="section video-section">
+            <section class="section video-section" data-fixed-menu="black" data-section-id="video">
                 <container class="container video-container">
                     <h2 class="section__title">Как мы работаем</h2>
                     <div class="player">
@@ -968,7 +968,7 @@
                     </div>
                 </container>
             </section>
-            <section class="section form-section">
+            <section class="section form-section" data-fixed-menu="white" data-section-id="form">
                 <container class="container form-container">
                     <h3 class="section__title form-title">Закажите доставку</h3>
                     <form class="form" id="form">
@@ -1049,7 +1049,7 @@
                     </form>
                 </container>
             </section>
-            <section class="section map-section">
+            <section class="section map-section" data-fixed-menu="black" data-section-id="map">
                 <contaner class="container map-container">
                     <div class="map">
                     </div>
@@ -1103,32 +1103,32 @@
     </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link fixed-menu__link--active"></a>
+            <li class="fixed-menu__item fixed-menu__item--active">
+                <a href="#" class="fixed-menu__link " data-scroll-to="hero"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+                <a href="#" class="fixed-menu__link" data-scroll-to="why"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+                <a href="#" class="fixed-menu__link" data-scroll-to="slider"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+                <a href="#" class="fixed-menu__link" data-scroll-to="work-team"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+                <a href="#" class="fixed-menu__link" data-scroll-to="accord"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+                <a href="#" class="fixed-menu__link" data-scroll-to="rewiews"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+                <a href="#" class="fixed-menu__link" data-scroll-to="video"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+                <a href="#" class="fixed-menu__link" data-scroll-to="form"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+                <a href="#" class="fixed-menu__link" data-scroll-to="map"></a>
             </li>
         </ul>
     </nav>
@@ -1142,25 +1142,25 @@
             <nav class="menu-tablets">
                 <ul class="menu-tablets__list">
                     <li class="menu-tablets__item">
-                        <a href="#" class="menu-tablets__link">О нас</a>
+                        <a href="#" class="menu-tablets__link" data-scroll-to="why">О нас</a>
                     </li>
                     <li class="menu-tablets__item">
-                        <a href="#" class="menu-tablets__link">Батончики</a>
+                        <a href="#" class="menu-tablets__link" data-scroll-to="slider">Батончики</a>
                     </li>
                     <li class="menu-tablets__item">
-                        <a href="#" class="menu-tablets__link">Команда</a>
+                        <a href="#" class="menu-tablets__link" data-scroll-to="work-team">Команда</a>
                     </li>
                     <li class="menu-tablets__item">
-                        <a href="#" class="menu-tablets__link">Меню</a>
+                        <a href="#" class="menu-tablets__link" data-scroll-to="accord">Меню</a>
                     </li>
                     <li class="menu-tablets__item">
-                        <a href="#" class="menu-tablets__link">Отзывы</a>
+                        <a href="#" class="menu-tablets__link" data-scroll-to="rewiews">Отзывы</a>
                     </li>
                     <li class="menu-tablets__item">
-                        <a href="#" class="menu-tablets__link">Как мы работаем</a>
+                        <a href="#" class="menu-tablets__link" data-scroll-to="video">Как мы работаем</a>
                     </li>
                     <li class="menu-tablets__item">
-                        <a href="#" class="menu-tablets__link">Контакты</a>
+                        <a href="#" class="menu-tablets__link" data-scroll-to="map">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -1186,6 +1186,7 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./scripts/ops.js"></script>
     <script src="./scripts/burger.js"></script>
     <script src="./scripts/accord.js"></script>
     <script src="./scripts/rewiews.js"></script>
