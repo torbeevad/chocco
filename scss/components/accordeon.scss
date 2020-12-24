@@ -47,7 +47,7 @@
     &--active {
 
         .accord__item-content {
-            width: rem(500px);
+            width: 30vw;
             padding: 10%;
 
             @include tablets {
@@ -58,7 +58,7 @@
 }
 
 .accord__item-title-box {
-    max-width: 5vw;
+    width: 5vw;
     padding-bottom: 10%;
 
     &-milk {
@@ -74,7 +74,7 @@
     }
 
     @include phones {
-        max-width: 15vw;
+        width: 15vw;
     }
 }
 

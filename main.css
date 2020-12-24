@@ -1464,7 +1464,7 @@ img {
   display: flex;
 }
 .accord__item--active .accord__item-content {
-  width: 27.7777777778rem;
+  width: 30vw;
   padding: 10%;
 }
 @media screen and (max-width: 768px) {
@@ -1474,7 +1474,7 @@ img {
 }
 
 .accord__item-title-box {
-  max-width: 5vw;
+  width: 5vw;
   padding-bottom: 10%;
 }
 .accord__item-title-box-milk {
@@ -1488,7 +1488,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .accord__item-title-box {
-    max-width: 15vw;
+    width: 15vw;
   }
 }
 
