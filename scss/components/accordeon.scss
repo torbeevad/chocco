@@ -58,7 +58,7 @@
 }
 
 .accord__item-title-box {
-    width: 5vw;
+    width: rem(110px);
     padding-bottom: 10%;
 
     &-milk {
@@ -73,7 +73,7 @@
         background: url('./img/bg/accord/wild-bg.png') center center / cover no-repeat;
     }
 
-    @include phones {
+    @include tablets {
         width: 15vw;
     }
 }

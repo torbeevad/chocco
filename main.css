@@ -1474,7 +1474,7 @@ img {
 }
 
 .accord__item-title-box {
-  width: 5vw;
+  width: 6.1111111111rem;
   padding-bottom: 10%;
 }
 .accord__item-title-box-milk {
@@ -1486,7 +1486,7 @@ img {
 .accord__item-title-box-wild {
   background: url("./img/bg/accord/wild-bg.png") center center/cover no-repeat;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .accord__item-title-box {
     width: 15vw;
   }
