@@ -1,80 +1,107 @@
 const sections = $(".section");
 const display = $(".maincontent");
+const fixedMenu = $(".fixed-menu");
+const menuItems = fixedMenu.find(".fixed-menu__item");
+
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
 
 let inScroll = false;
 
 sections.first().addClass("section--active");
 
-function performTransition(sectionEq) {
-    if (inScroll == false) {
-        inScroll = true;
-        const position = sectionEq * -100;
+function countSectionPosition(sectionEq) {
+    return sectionEq * -100;
+}
 
-        const currentSection = sections.eq(sectionEq);
-        const menuTheme = currentSection.attr("data-fixed-menu");
-        const fixedMenu = $(".fixed-menu");
+const changeMenuThemeForSection = (sectionEq) => {
+    const currentSection = sections.eq(sectionEq);
+    const menuTheme = currentSection.attr("data-fixed-menu");
+    const activeClass = "fixed-menu--black"
 
-        if (menuTheme == "black") {
-            fixedMenu.addClass("fixed-menu--black");
-        } else {
-            fixedMenu.removeClass("fixed-menu--black");
-        }
-
-        display.css({
-            transform: `translateY(${position}%)`,
-        });
-
-        sections.eq(sectionEq).addClass("section--active").siblings().removeClass("section--active");
-        fixedMenu.find(".fixed-menu__item").eq(sectionEq).addClass("fixed-menu__item--active").siblings().removeClass("fixed-menu__item--active");
-        
-        setTimeout(() => {
-            inScroll = false;
-
-        }, 500);
+    if (menuTheme == "black") {
+        fixedMenu.addClass(activeClass);
+    } else {
+        fixedMenu.removeClass(activeClass);
     }
 }
 
-function scrollViewport(direction) {
+const resetActiveClassForItem = (items, itemEq, activeClass) => {
+    items.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
+}
+
+function performTransition(sectionEq) {
+    if (inScroll) return
+
+    inScroll = true;
+
+    const position = countSectionPosition(sectionEq);
+
+    changeMenuThemeForSection(sectionEq);
+
+    display.css({
+        transform: `translateY(${position}%)`,
+    });
+
+    resetActiveClassForItem(sections, sectionEq, "section--active");
+    resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__item--active");
+
+    setTimeout(() => {
+        inScroll = false;
+    }, 500);
+}
+
+function viewportScroller() {
     const activeSection = sections.filter(".section--active");
     const nextSection = activeSection.next();
     const prevSection = activeSection.prev();
 
-    if (direction == "next" && nextSection.length) {
-        performTransition(nextSection.index());
-    }
-
-    if (direction == "prev" && prevSection.length) {
-        performTransition(prevSection.index());
-    }
-}
+    return {
+        next() {
+            if (nextSection.length) {
+                performTransition(nextSection.index());
+            }
+        },
+        prev() {
+            if (prevSection.length) {
+                performTransition(prevSection.index());
+            }
+        },
+    };
+};
 
 $(window).on("wheel", (e) => {
     const deltaY = e.originalEvent.deltaY;
+    const scroller = viewportScroller();
 
     if (deltaY > 0) {
-        scrollViewport("next");
+        scroller.next();
     }
 
     if (deltaY < 0) {
-        scrollViewport("prev");
+        scroller.prev();
     }
 });
 
 $(window).on("keydown", e => {
     const tagName = e.target.tagName.toLowerCase();
+    const userTypeingInInputs = tagName == "input" || tagName == "textarea";
+    const scroller = viewportScroller();
 
-    if (tagName !== "input" && tagName !== "textarea") {
-        switch (e.keyCode) {
-            case 38:
-                scrollViewport("prev");
-                break;
+    if (userTypeingInInputs) return;
 
-            case 40:
-                scrollViewport("next");
-                break;
-        }
+    switch (e.keyCode) {
+        case 38:
+            scroller.prev();
+            break;
+
+        case 40:
+            scroller.next();
+            break;
     }
 })
+
+$(".wrapper").on("touchmove", e => e.preventDefault());
 
 $("[data-scroll-to]").click((e) => {
     e.preventDefault();
@@ -85,3 +112,17 @@ $("[data-scroll-to]").click((e) => {
 
     performTransition(reqSection.index());
 })
+
+if (isMobile) {
+    $(".body").swipe({
+        swipe: function (event, direction) {
+            const scroller = viewportScroller();
+            let scrollDirection = "";
+
+            if(direction == "up") scrollDirection = "next";
+            if(direction == "down") scrollDirection = "prev";
+
+            scroller[scrollDirection]();
+        },
+    });
+}

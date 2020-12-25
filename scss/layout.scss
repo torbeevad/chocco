@@ -39,7 +39,7 @@ body {
 
 .section {
     position: relative;
-    height: 100vh;
+    height: 100%;
     min-height: rem(650px);
     display: flex;
     flex-direction: column;
@@ -48,6 +48,7 @@ body {
 }
 
 .container {
+    height: 100%;
     width: 95%;
     max-width: $containerWidth;
     margin: 0 auto;
