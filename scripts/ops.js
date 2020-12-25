@@ -119,8 +119,10 @@ if (isMobile) {
             const scroller = viewportScroller();
             let scrollDirection = "";
 
-            if(direction == "up") scrollDirection = "next";
-            if(direction == "down") scrollDirection = "prev";
+            if (direction == "up") scrollDirection = "next";
+            if (direction == "down") scrollDirection = "prev";
+            if (direction == "left") return;
+            if (direction == "right") return;
 
             scroller[scrollDirection]();
         },
