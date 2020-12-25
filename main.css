@@ -1501,7 +1501,7 @@ img {
 
 .accord__item-title {
   vertical-align: bottom;
-  transform: rotate(-90deg) translateX(-85vh);
+  transform: rotate(-90deg) translateX(-75vh);
   transform-origin: center;
   font-style: normal;
   font-weight: bold;
