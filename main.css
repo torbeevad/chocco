@@ -1811,7 +1811,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../../img/video/Rectangle 9.png") center center no-repeat;
+  background: url("./img/video/Rectangle 9.png") center center no-repeat;
   position: absolute;
   top: 0;
   bottom: 0;
