@@ -1,4 +1,6 @@
-.map-container {
-    position: relative;
-    background: url('./img/bg/map/map.png') center center no-repeat;
+.footer {
+    position: absolute;
+    bottom: 100%;
+    z-index: 100;
 }
+

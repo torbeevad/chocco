@@ -1,0 +1,203 @@
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    margin-top: rem(30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player__wrapper {
+    position: relative;
+}
+
+.player__splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../img/video/Rectangle\ 9.png') center center no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.player__splash-btn {
+    background: transparent;
+    outline: none;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.player__splash-btn-icon {
+    width: 75px;
+    height: 110px;
+    fill: #FFF;
+}
+
+.player__controls {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    background: #404040;
+}
+
+.player__start-paused-btn {
+    position: relative;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #404040;
+    border: none;
+    outline: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.player__paused-icon,
+.player__start-icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: center;
+    left: 50%;
+    fill: #626262;
+}
+
+.player__paused-icon {
+    display: none;
+    width: 12px;
+    height: 20px;
+}
+
+.player__start-icon {
+    display: flex;
+    width: 10px;
+    height: 16px;
+}
+
+.player--paused {
+    .player__start-icon {
+        display: none;
+    }
+
+    .player__paused-icon {
+        display: flex;
+    }
+
+    .player__splash {
+        display: none;
+    }
+}
+
+.player__playback {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 20%;
+    background-color: #626262;
+}
+
+.player__playback-button {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 100px;
+    background-color: #626262;
+    border: none;
+    outline: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.player__volume {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+}
+
+.player__volume-mute-button {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 18px;
+            width: 3px;
+            transform: rotate(-45deg);
+            background-color: #626262;
+        }
+    }
+}
+
+.player__volume-mute-icon {
+    width: 10px;
+    height: 16px;
+    fill: #626262;
+}
+
+.player__volume-level {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 20%;
+    background-color: #626262;
+}
+
+.player__volume-level-button {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 100px;
+    background-color: #626262;
+    border: none;
+    outline: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.player__duration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+}
