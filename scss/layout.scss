@@ -35,6 +35,7 @@ body {
     height: 100%;
     transition: transform 0.5s;
     will-change: transform;
+    position: relative;
 }
 
 .section {

@@ -1,12 +1,20 @@
 .footer {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     bottom: 0;
+    z-index: 100;
     background-color: #fff;
-    align-items: center;
     height: rem(100px);
     padding: 0 8%;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: rem(940px);
 
     @include phones {
         flex-direction: column;

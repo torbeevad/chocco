@@ -407,6 +407,7 @@ body {
   height: 100%;
   transition: transform 0.5s;
   will-change: transform;
+  position: relative;
 }
 
 .section {
@@ -549,7 +550,7 @@ img {
 @media screen and (max-width: 480px) {
   .hero-container {
     background: url("./img/bg/hero/comp.png") center 12%/75% auto no-repeat;
-    padding: 5% 0 15%;
+    padding: 5% 0 10%;
   }
 }
 
@@ -2024,23 +2025,25 @@ img {
 }
 
 .footer {
-  position: absolute;
-  bottom: 100%;
-  z-index: 100;
-}
-
-.footer {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: 0;
+  z-index: 100;
   background-color: #fff;
-  align-items: center;
   height: 5.5555555556rem;
   padding: 0 8%;
 }
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 52.2222222222rem;
+}
 @media screen and (max-width: 480px) {
-  .footer {
+  .footer__content {
     flex-direction: column;
     justify-content: space-around;
     padding: 1% 0;
