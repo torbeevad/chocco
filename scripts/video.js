@@ -24,7 +24,37 @@ function eventsInit() {
         });
 
         player.seekTo(newPlaybackPositionSec);
+
+        $(".player__playback-button").attr("disabled", true);
     });
+
+    $(".player__mute-button").click(e => {
+        e.preventDefault();
+        const playerVolumeMuteBtn = $(".player__mute-button")
+
+        if (playerVolumeMuteBtn.hasClass("player__mute-button--active")) {
+            player.unMute();
+            playerVolumeMuteBtn.removeClass("player__mute-button--active");
+        } else {
+            player.mute();
+            playerVolumeMuteBtn.addClass("player__mute-button--active");
+        }
+    });
+
+    $(".player__volume-level").click(e => {
+        const bar = $(e.currentTarget);
+        const clickedPosition = e.originalEvent.layerX;
+        const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
+        const newVolumeLevel = (100 / 100) * newButtonPositionPercent;
+
+        $(".player__volume-level-button").css({
+            left: `${newButtonPositionPercent}%`
+        });
+
+        player.setVolume(newVolumeLevel);
+
+        $(".player__volume-level-button").attr("disabled", true);
+    })
 }
 
 $(".player__splash").click(e => {
@@ -98,5 +128,7 @@ function onYouTubeIframeAPIReady() {
         }
     });
 }
+
+
 
 eventsInit();

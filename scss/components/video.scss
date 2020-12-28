@@ -116,12 +116,13 @@
 
 .player__playback-button {
     position: absolute;
-    top: -100%;
+    top: center;
     left: 0;
-    width: 13px;
-    height: 13px;
+    width: 10px;
+    height: 10px;
     border-radius: 100px;
     background-color: #626262;
+    transform: translateX(-50%);
     border: none;
     outline: none;
 
@@ -130,15 +131,7 @@
     }
 }
 
-.player__volume {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 15%;
-}
-
-.player__volume-mute-button {
+.player__mute-button {
     display: flex;
     position: relative;
     align-items: center;
@@ -150,7 +143,7 @@
         cursor: pointer;
     }
 
-    &:active {
+    &--active {
         &::after {
             content: "";
             position: absolute;
@@ -164,31 +157,32 @@
     }
 }
 
-.player__volume-mute-icon {
+.player__mute-icon {
     width: 10px;
     height: 16px;
     fill: #626262;
 }
 
 .player__volume-level {
-    position: relative;
     display: flex;
     align-items: center;
-    width: 60%;
     height: 20%;
+    width: 10%;
+    position: relative;
     background-color: #626262;
 }
 
 .player__volume-level-button {
     position: absolute;
-    top: -100%;
+    top: center;
     left: 0;
-    width: 13px;
-    height: 13px;
+    width: 10px;
+    height: 10px;
     border-radius: 100px;
     background-color: #626262;
     border: none;
     outline: none;
+    transform: translateX(-50%);
 
     &:hover {
         cursor: pointer;

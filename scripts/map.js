@@ -1,5 +1,6 @@
 let myMap;
-const init = () => {
+
+function init() {
     myMap = new ymaps.Map("map", {
         center: [59.93, 30.30],
         zoom: 11,
@@ -27,6 +28,6 @@ const init = () => {
     myMap.geoObjects.add(myCollection);
 
     myMap.behaviors.disable('scrollZoom');
-};
+}
 
 ymaps.ready(init);
