@@ -963,17 +963,15 @@
                                     <use xlink:href="./img/sprite.svg#play"></use>
                                 </svg>
                             </button>
-                            <div class="player__playback">
-                                <button class="player__playback-button"></button>
-                            </div>
+                            <input type="range" value="0" min="0" max="100" class="player__playback">
+                            </input>
                             <button class="player__mute-button">
                                 <svg class="player__mute-icon">
                                     <use xlink:href="./img/sprite.svg#volume"></use>
                                 </svg>
                             </button>
-                            <div class="player__volume-level">
-                                <button class="player__volume-level-button"></button>
-                            </div>
+                            <input type="range" value="100" min="0" max="100" class="player__volume-level">
+                            </input>
                             <div class="player__duration">
                                 <span class="player__duration-completed">0.00</span>
                                 <span class="player__duration-estimate">0.00</span>

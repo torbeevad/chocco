@@ -3,6 +3,8 @@ let player;
 const playerContainer = $(".player");
 
 function eventsInit() {
+    const volumeLevel = $(".player__volume-level")
+
     $(".player__start-paused-btn").click(e => {
         e.preventDefault();
 
@@ -13,19 +15,9 @@ function eventsInit() {
         }
     });
 
-    $(".player__playback").click(e => {
-        const bar = $(e.currentTarget);
-        const clickedPosition = e.originalEvent.layerX;
-        const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
-        const newPlaybackPositionSec = (player.getDuration() / 100) * newButtonPositionPercent;
-
-        $(".player__playback-button").css({
-            left: `${newButtonPositionPercent}%`
-        });
-
-        player.seekTo(newPlaybackPositionSec);
-
-        $(".player__playback-button").attr("disabled", true);
+    $('.player__playback').change(e => {
+        const clickedPosition = e.target.value;
+        player.seekTo(clickedPosition);
     });
 
     $(".player__mute-button").click(e => {
@@ -35,26 +27,18 @@ function eventsInit() {
         if (playerVolumeMuteBtn.hasClass("player__mute-button--active")) {
             player.unMute();
             playerVolumeMuteBtn.removeClass("player__mute-button--active");
+            volumeLevel.val(100);
         } else {
             player.mute();
             playerVolumeMuteBtn.addClass("player__mute-button--active");
+            volumeLevel.val(0);
         }
     });
 
-    $(".player__volume-level").click(e => {
-        const bar = $(e.currentTarget);
-        const clickedPosition = e.originalEvent.layerX;
-        const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
-        const newVolumeLevel = (100 / 100) * newButtonPositionPercent;
-
-        $(".player__volume-level-button").css({
-            left: `${newButtonPositionPercent}%`
-        });
-
-        player.setVolume(newVolumeLevel);
-
-        $(".player__volume-level-button").attr("disabled", true);
-    })
+    volumeLevel.change(e => {
+        const clickedPosition = e.target.value;
+        player.setVolume(clickedPosition);
+    });
 }
 
 $(".player__splash").click(e => {
