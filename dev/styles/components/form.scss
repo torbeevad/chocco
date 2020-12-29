@@ -1,0 +1,162 @@
+.form-section {
+    background: url('./img/bg/delivery/backgr.png');
+
+    &::after {
+        content: url('./img/bg/delivery/leaf.png');
+        position: absolute;
+        right: 1%;
+        bottom: 7%;
+
+        @include phones {
+            display: none;
+        }
+    }
+
+    &::before {
+        content: url('./img/bg/delivery/berry.png');
+        position: absolute;
+        left: 3%;
+        bottom: 7%;
+
+        @include phones {
+            display: none;
+        }
+    }
+}
+
+.form-container {
+    color: $darkgreen;
+    align-items: center;
+
+    @include tablets {
+        max-width: 62%;
+    }
+
+    @include phones {
+        max-width: 100%;
+    }
+}
+
+.form-title {
+    color: $darkgreen;
+    margin-bottom: rem(60px);
+
+    @include tablets {
+        margin-bottom: rem(40px);
+    }
+
+    @include phones {
+        margin-bottom: 5%;
+        font-size: rem(35px);
+    }
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
+.form__column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: rem(27px);
+
+    &:last-child {
+        margin-right: 0;
+
+        @include phones {
+            margin-bottom: 0;
+        }
+    }
+
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: rem(24px);
+    }
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: rem(15px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include tablets {
+        margin-bottom: rem(20px);
+
+    }
+}
+
+.form__block {
+    flex: 1;
+    margin-right: rem(20px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__entry {
+    width: 100%;
+    padding: 0 rem(15px);
+    height: rem(58px);
+    border-radius: rem(4px);
+    border: rem(3px) solid transparent;
+    font-size: rem(20px);
+
+    &--error {
+        background-color: rgb(250, 220, 220);
+    }
+
+    @include tablets {
+        height: rem(36px);
+    }
+
+    &-number {
+        text-align: center;
+    }
+
+    &--textarea {
+        min-height: rem(152px);
+        resize: none;
+        width: 100%;
+        padding: rem(15px);
+        border-radius: rem(4px);
+        border: rem(3px) solid transparent;
+
+        &:focus {
+            outline: none;
+            border: rem(3px) solid #DEE2BD;
+        }
+
+        @include phones {
+            min-height: rem(76px);
+        }
+    }
+
+    &:focus {
+        outline: none;
+        border: rem(3px) solid #DEE2BD;
+    }
+}
+
+.form__control {
+    margin-top: rem(15px);
+    margin-bottom: rem(30px);
+}
+
+.form__button {
+    display: flex;
+    margin-top: rem(15px);
+
+    @include tablets {
+        justify-content: center;
+    }
+}

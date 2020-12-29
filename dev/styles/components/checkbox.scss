@@ -1,0 +1,44 @@
+.checkbox {
+    display: flex;
+
+    @include phones {
+        justify-content: center;
+    }
+}
+
+.checkbox__input {
+    display: flex;
+    cursor: pointer;
+}
+
+.checkbox__visible {
+    width: rem(25px);
+    height: rem(25px);
+    display: flex;
+    background-color: #FFF;
+    margin-right: rem(10px);
+    align-items: center;
+    justify-content: center;
+    border-radius: rem(4px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.checkbox__checkmark {
+    width: rem(13px);
+    height: rem(13px);
+    display: none;
+    fill: $darkgreen;
+}
+
+.checkbox__elem {
+    display: none;
+
+    &:checked+.checkbox__visible {
+        .checkbox__checkmark {
+            display: block;
+        }
+    }
+}

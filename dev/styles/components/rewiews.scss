@@ -1,0 +1,171 @@
+.reviews-section {
+    background: url('./img/bg/rewiews/strawberry.png') top right no-repeat;
+
+    &::before {
+        content: url('./img/bg/rewiews/berries.png');
+        position: absolute;
+        left: 0;
+        bottom: rem(-90px);
+        z-index: 20;
+
+        @include phones {
+            display: none;
+        }
+    }
+
+    &::after {
+        content: url('./img/bg/rewiews/bw-leaf.png');
+        position: absolute;
+        left: 0;
+        bottom: rem(-160px);
+        z-index: 10;
+
+        @include phones {
+            display: none;
+        }
+    }
+
+    @include phones {
+        background-size: 20%;
+    }
+}
+
+.rewiews-section__title {
+    margin-bottom: rem(32px);
+}
+
+.rewiews {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: rem(85px);
+        height: rem(85px);
+        border-radius: 50%;
+        background-color: #fff;
+        left: 50%;
+        top: rem(-65px);
+        transform: translate(-50%);
+    }
+}
+
+.rewiews__list {
+    position: relative;
+    margin-bottom: rem(15px);
+}
+
+.reviews__item {
+    display: flex;
+    position: absolute;
+    padding: rem(42px);
+    background-color: #F8FAF9;
+    left: 9999px;
+    background: url('./img/bg/rewiews/bw-berries.png') right 15% no-repeat;
+    background-color: #F8FAF9;
+
+    &--active {
+        position: static;
+        opacity: 1;
+    }
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        background-size: 30%;
+    }
+
+    @include phones {
+        background-size: 20%;
+        padding: 5%;
+    }
+}
+
+.reviews__avatar {
+    display: block;
+    margin-right: rem(40px);
+    width: rem(252px);
+    height: rem(264px);
+    flex-shrink: 0;
+
+    @include tablets {
+        width: rem(140px);
+        height: rem(140px);
+        margin-bottom: rem(30px);
+        margin-right: 0;
+    }
+
+    @include tablets {
+        margin-right: 0;
+    }
+}
+
+.reviews__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.reviews__content-title {
+    font-weight: bold;
+    font-size: rem(27px);
+    color: #000;
+
+    @include tablets {
+        margin-bottom: rem(25px);
+    }
+}
+
+.reviews__content-text {
+    max-width: 78%;
+
+    @include tablets {
+        max-width: 100%;
+
+        @include tablets {
+            margin-bottom: rem(25px);
+        }
+    }
+}
+
+.content-autor {
+    font-weight: 500;
+    color: #000;
+}
+
+.reviews__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviews__list-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews__human {
+    width: rem(80px);
+    height: rem(80px);
+    border: rem(4px) solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &--active {
+        width: rem(80px);
+        height: rem(80px);
+        border: rem(4px) solid #365A49;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
+
+.reviews__human-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
